@@ -1,0 +1,42 @@
+import React from "react";
+import heroimage from "../../assets/image/contact/hero.jpg?url";
+const HeroContact = () => {
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src={heroimage}
+          alt="Yara Production Facility"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-serif font-light tracking-[5px] text-primary mb-4">
+            YARA PRODUCTION
+          </h3>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-gray-50 leading-tight mb-8 tracking-wider uppercase">
+            Connect With Us
+          </h1>
+
+          {/* Optional CTA Button */}
+          <button className="mt-8 px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300">
+            View Our Green Initiatives
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll indicator (optional) */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+        <div className="animate-bounce w-6 h-10 border-2 border-white rounded-full flex justify-center">
+          <div className="w-1 h-2 bg-white mt-2 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroContact;

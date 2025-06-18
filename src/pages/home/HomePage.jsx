@@ -3,7 +3,7 @@ import HeroHome from "./HeroHome";
 import AboutUsHome from "./AboutUsHome";
 import GarmantsHome from "./GarmantsHome";
 import WhyChose from "./WhyChose";
-import Watch from "./Watch";
+import Watch from "../../components/Watch";
 
 const HomePage = () => {
   return (

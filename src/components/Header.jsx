@@ -38,11 +38,11 @@ const Header = () => {
     },
     {
       label: "Our Fabric",
-      path: "/fabric",
+      path: "/fabric-production",
     },
     {
       label: "Quality",
-      path: "/quality",
+      path: "/our-qualitys",
     },
     {
       label: "Sustainability",

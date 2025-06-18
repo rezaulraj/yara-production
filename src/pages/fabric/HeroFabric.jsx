@@ -1,0 +1,48 @@
+import React from "react";
+import fabrick from "../../assets/image/fabric/hero.jpg?url";
+import { FiArrowRight } from "react-icons/fi";
+const HeroFabric = () => {
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src={fabrick}
+          alt="Yara Production Facility"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-serif font-light tracking-[5px] text-primary mb-4">
+            YARA PRODUCTION
+          </h3>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-gray-50 leading-tight mb-8 tracking-wider uppercase">
+            Fabric Processing and Development
+          </h1>
+
+          {/* Optional CTA Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <button className="flex items-center px-8 py-3 bg-primary border-2 border-primary text-white font-serif text-lg hover:bg-primary/90 hover:border-primary/90 transition-all duration-300">
+              Explore Our Fabric Library <FiArrowRight className="ml-2" />
+            </button>
+            <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300">
+              Custom Fabric Development
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator (optional) */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+        <div className="animate-bounce w-6 h-10 border-2 border-white rounded-full flex justify-center">
+          <div className="w-1 h-2 bg-white mt-2 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroFabric;

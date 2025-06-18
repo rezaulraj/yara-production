@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import ReactPlayer from "react-player";
-import bgImage from "../../assets/image/home/footer.jpg?url";
+import bgImage from "../assets/image/home/footer.jpg?url";
 
 const Watch = () => {
   const [showVideo, setShowVideo] = useState(false);
