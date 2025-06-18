@@ -23,7 +23,7 @@ const HeroHome = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-xl md:text-2xl font-serif font-light tracking-[5px] text-gray-50 mb-4">
+          <h3 className="text-xl md:text-2xl font-serif font-light tracking-[5px] text-primary mb-4">
             WELCOME TO YARA PRODUCTION
           </h3>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-gray-50 leading-tight mb-8 tracking-wider uppercase">

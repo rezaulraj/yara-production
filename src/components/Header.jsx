@@ -80,13 +80,15 @@ const Header = () => {
         <div className="flex justify-between md:justify-center space-x-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img
-              src={logo}
-              alt="Yara Logo"
-              className={`h-12 transition-all duration-500 ${
-                scrolled ? "h-10" : "h-12"
-              }`}
-            />
+            <a href="/">
+              <img
+                src={logo}
+                alt="Yara Logo"
+                className={`h-12 transition-all duration-500 ${
+                  scrolled ? "h-10" : "h-12"
+                }`}
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -96,7 +98,7 @@ const Header = () => {
                 {link.subNav ? (
                   <>
                     <button
-                      className={`flex items-center font-medium transition-colors ${
+                      className={`flex items-center font-medium font-serif tracking-widest transition-colors ${
                         scrolled ? "text-[#CCB064]" : "text-white"
                       } hover:text-[#CCB064]`}
                       onClick={() => toggleSubMenu(index)}
@@ -117,12 +119,12 @@ const Header = () => {
                       </svg>
                     </button>
                     {openSubMenu === index && (
-                      <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+                      <div className="absolute font-serif left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                         {link.subNav.map((subLink, subIndex) => (
                           <a
                             key={subIndex}
                             href={subLink.path}
-                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                            className="block px-4 py-2 text-gray-800 tracking-widest hover:bg-gray-100"
                           >
                             {subLink.label}
                           </a>
