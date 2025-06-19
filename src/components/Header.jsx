@@ -109,7 +109,7 @@ const Header = () => {
                 {link.subNav ? (
                   <>
                     <button
-                      className={`flex items-center font-medium font-serif tracking-widest transition-colors ${
+                      className={`flex items-center font-medium font-serif uppercase tracking-widest transition-colors ${
                         scrolled ? "text-gray-800" : "text-white"
                       } hover:text-[#CCB064]`}
                     >
