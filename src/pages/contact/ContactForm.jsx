@@ -34,7 +34,6 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-   
     setTimeout(() => {
       setIsSubmitting(false);
       setShowSuccess(true);
@@ -50,7 +49,6 @@ const ContactForm = () => {
 
   return (
     <section id="get-in-touch" className="bg-gray-50 py-16 relative">
-      
       {showSuccess && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative">
@@ -91,7 +89,6 @@ const ContactForm = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-normal text-gray-800 mb-6 flex items-center">
@@ -105,34 +102,32 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-medium text-gray-800">Address</h4>
                     <p className="text-gray-600">
-                      Ikitelli Osb. Mah. Hurriyet Bulv. SS Deparko San. Sit
-                      No:1/44-12 Basaksehir - Istanbul / TURKEY
+                      Trav. Borrás, 9, 12300 Morella, Castellón, Spain
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <FiPhone className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-800">Phone</h4>
                     <p className="text-gray-600">+90 212 675 24 98</p>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <FiPhone className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-800">Fax</h4>
                     <p className="text-gray-600">+90 212 675 24 99</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
-           
             <div className="bg-white p-4 rounded-lg shadow-md h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637015383!2d28.77678231572719!3d41.0215143269281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzE3LjQiTiAyOMKwNDYnNDkuOSJF!5e0!3m2!1sen!2str!4v1620000000000!5m2!1sen!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.5475553106176!2d-0.10469022411326452!3d40.61780504337703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5f826890aed477%3A0x91cf3e81adedbca6!2sTrav.%20Borr%C3%A1s%2C%209%2C%2012300%20Morella%2C%20Castell%C3%B3n%2C%20Spain!5e0!3m2!1sen!2sbd!4v1750326698002!5m2!1sen!2sbd"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -143,7 +138,6 @@ const ContactForm = () => {
             </div>
           </div>
 
-         
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-xl font-serif font-normal text-gray-800 mb-6 flex items-center">
               <FiSend className="text-amber-600 mr-2" />

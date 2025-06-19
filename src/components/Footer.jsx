@@ -8,180 +8,184 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import logo from "/logo2.png?url";
+import { LuContact } from "react-icons/lu";
 
 const Footer = () => {
+  const socialLinks = [
+    { icon: <FaFacebook className="text-lg" />, href: "#" },
+    { icon: <FaInstagram className="text-lg" />, href: "#" },
+    { icon: <FaLinkedin className="text-lg" />, href: "#" },
+    { icon: <FaTwitter className="text-lg" />, href: "#" },
+  ];
+
+  const exploreLinks = [
+    { label: "ABOUT YARA", href: "/about-yara" },
+    { label: "FACTORY", href: "/factory" },
+    { label: "OUR FABRICS", href: "/fabric-production" },
+    { label: "QUALITY", href: "/our-qualitys" },
+    { label: "SUSTAINABILITY", href: "/sustainability" },
+    { label: "CONTACT", href: "/contact" },
+  ];
+
+  const legalLinks = [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
+    { label: "Sitemap", href: "#" },
+  ];
+
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-b from-gray-900 to-gray-800 text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-gray-700">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* About Section */}
-          <div className="space-y-6">
-            <div className="flex items-center justify-center">
-              <img src={logo} alt="GYT Textile" className="h-12 mr-3" />
-              {/* <h2 className="text-2xl font-serif font-semibold text-white">
-                YARA PRODUCTION
-              </h2> */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div className="flex items-center justify-center md:justify-start">
+              <img
+                src={logo}
+                alt="Yara Production"
+                className="h-16 transition-transform hover:scale-105 duration-300"
+              />
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              GYT Textile is the leading company in Turkey in the production of
-              niche and high quality knitted clothing products by producing
-              cotton, silk, wool, linen, cashmere, tencel, viscose and nylon
-              knitted fabrics starting from yarn.
+            <p className="text-gray-400 leading-relaxed text-sm">
+              Yara Production is Spain's premier manufacturer of high-end, niche
+              knitted clothing products. We specialize in producing exceptional
+              quality fabrics from premium yarns.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaFacebook className="text-xl" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaInstagram className="text-xl" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaLinkedin className="text-xl" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaTwitter className="text-xl" />
-              </a>
+              {socialLinks.map((link, index) => (
+                <motion.a
+                  key={index}
+                  href={link.href}
+                  className="bg-gray-700 hover:bg-amber-600 text-white p-3 rounded-full transition-all duration-300"
+                  whileHover={{ y: -4, scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  {link.icon}
+                </motion.a>
+              ))}
             </div>
-          </div>
+          </motion.div>
 
-          {/* Turkish Section */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-serif font-semibold text-white border-b border-amber-600 pb-2 inline-block">
-              Türkçe
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              GYT Tekstil, iplikten başlayarak pamuk, ipek, yün, keten, kaşmir,
-              tencel, viskon ve naylon örme kumaşlar üreterek niş ve yüksek
-              kaliteli örme giyim ürünleri üretiminde Türkiye'nin önde gelen
-              şirketidir.
-            </p>
-          </div>
-
-          {/* Explore Section */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-serif font-semibold text-white border-b border-amber-600 pb-2 inline-block">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h3 className="text-xl font-medium text-white relative pb-2 inline-block before:absolute before:bottom-0 before:left-0 before:w-12 before:h-0.5 before:bg-amber-500">
               Explore
             </h3>
             <ul className="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
+              {exploreLinks.map((link, index) => (
+                <motion.li
+                  key={index}
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
                 >
-                  ABOUT GYT
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
-                  FACTORY
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
-                  OUR FABRICS
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
-                  QUALITY
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
-                  SUSTAINABILITY
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
-                  CONTACT
-                </a>
-              </li>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-amber-400 transition-colors flex items-center group"
+                  >
+                    <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      {link.label}
+                    </span>
+                  </a>
+                </motion.li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
 
-          {/* Contact Section */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-serif font-semibold text-white border-b border-amber-600 pb-2 inline-block">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="h-80 w-full"
+          >
+            <div className="bg-gradient-to-br from-gray-800 to-gray-700 p-1 rounded-xl shadow-2xl h-full overflow-hidden transform hover:shadow-amber-900/20 transition-all duration-500 border border-gray-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.5475553106176!2d-0.10469022411326452!3d40.61780504337703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5f826890aed477%3A0x91cf3e81adedbca6!2sTrav.%20Borr%C3%A1s%2C%209%2C%2012300%20Morella%2C%20Castell%C3%B3n%2C%20Spain!5e0!3m2!1sen!2sbd!4v1750326698002!5m2!1sen!2sbd"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                className="rounded-lg"
+              ></iframe>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h3 className="text-xl font-medium text-white relative pb-2 inline-block before:absolute before:bottom-0 before:left-0 before:w-12 before:h-0.5 before:bg-amber-500">
               Contact
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start">
-                <FaMapMarkerAlt className="text-amber-500 mt-1 mr-3 flex-shrink-0" />
-                <p className="text-gray-400">
-                  Hurriyet Bulvari Deparko San Sit No: 1/44 Basaksehir Istanbul Turkey
+              <motion.div
+                className="flex items-start group"
+                whileHover={{ x: 5 }}
+              >
+                <div className="bg-amber-500/10 p-2 rounded-lg mr-3 group-hover:bg-amber-500/20 transition-colors">
+                  <FaMapMarkerAlt className="text-amber-400" />
+                </div>
+                <p className="text-gray-400 group-hover:text-white transition-colors">
+                  Trav. Borrás, 9, 12300 Morella, Castellón, Spain
                 </p>
-              </div>
-              <div className="flex items-center">
-                <FaPhone className="text-amber-500 mr-3" />
-                <p className="text-gray-400">+90 (212) 675 24 98</p>
-              </div>
-              <div className="flex items-center">
-                <FaEnvelope className="text-amber-500 mr-3" />
-                <a
-                  href="mailto:info@gyttextile.com"
-                  className="text-gray-400 hover:text-amber-500 transition-colors"
-                >
+              </motion.div>
+
+              <motion.a
+                href="/contact"
+                className="flex items-center group"
+                whileHover={{ x: 5 }}
+              >
+                <div className="bg-amber-500/10 p-2 rounded-lg mr-3 group-hover:bg-amber-500/20 transition-colors">
+                  <LuContact className="text-amber-400" />
+                </div>
+                <span className="text-gray-400 group-hover:text-amber-400 transition-colors">
                   Contact Us Today
-                </a>
-              </div>
+                </span>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Copyright Section */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} YARA Production. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-white text-sm transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-white text-sm transition-colors"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-white text-sm transition-colors"
-            >
-              Sitemap
-            </a>
+            {legalLinks.map((link, index) => (
+              <motion.a
+                key={index}
+                href={link.href}
+                className="text-gray-500 hover:text-amber-400 text-sm transition-colors"
+                whileHover={{ y: -2 }}
+              >
+                {link.label}
+              </motion.a>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
