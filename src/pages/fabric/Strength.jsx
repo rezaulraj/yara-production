@@ -65,10 +65,9 @@ const Strength = () => {
   };
 
   return (
-    <section className="bg-amber-50">
+    <section id="explor-our-fabric" className="bg-amber-50">
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
           <div className="space-y-8">
             <h4 className="text-primary font-serif text-lg tracking-widest">
               OUR STRENGTH
@@ -82,7 +81,6 @@ const Strength = () => {
               machines, we've grown to feature:
             </p>
 
-            {/* Production Features */}
             <div className="space-y-4">
               {productionFeatures.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-4">
@@ -92,7 +90,6 @@ const Strength = () => {
               ))}
             </div>
 
-            {/* Crafting Exceptional Fabrics Section */}
             <div className="pt-6">
               <h3 className="text-2xl font-serif font-medium text-gray-800 mb-4">
                 Crafting Exceptional Fabrics
@@ -115,7 +112,6 @@ const Strength = () => {
             </div>
           </div>
 
-          {/* Image Gallery */}
           <div className="grid grid-cols-2 gap-4">
             {fabricImages.map((image, index) => (
               <div
@@ -129,14 +125,15 @@ const Strength = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-medium">Click Me</span>
+                  <span className="text-white text-lg font-medium">
+                    Click Me
+                  </span>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Image Popup Gallery */}
         {isGalleryOpen && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <button

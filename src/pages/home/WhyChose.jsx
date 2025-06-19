@@ -57,7 +57,6 @@ const WhyChose = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-6 py-20 relative">
-      {/* Logo Watermark Background */}
       <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
         <div
           className="absolute inset-0 bg-repeat"
@@ -68,7 +67,6 @@ const WhyChose = () => {
         ></div>
       </div>
 
-      {/* First Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20 relative z-10">
         <div className="space-y-8">
           <div className="flex items-center gap-4 mb-6">
@@ -145,7 +143,6 @@ const WhyChose = () => {
         </div>
       </div>
 
-      {/* Image Grid Section */}
       <div className="mb-16 relative z-10">
         <div className="flex items-center gap-4 mb-6">
           <div className="h-px bg-gray-900 flex-1"></div>
@@ -190,14 +187,12 @@ const WhyChose = () => {
                   onMouseLeave={() => swiperRef.current?.autoplay?.start()}
                   className="relative group overflow-hidden rounded-xl shadow-lg h-80"
                 >
-                  {/* Image */}
                   <img
                     src={card.image}
                     alt={card.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
-                  {/* Bottom Text (Visible by default) */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-10 transition-all duration-500 group-hover:opacity-0">
                     <span className="text-sm font-medium text-white bg-primary/90 font-serif px-3 py-1 rounded-full">
                       {card.category}
@@ -207,7 +202,6 @@ const WhyChose = () => {
                     </h3>
                   </div>
 
-                  {/* Full Overlay (Visible on hover) */}
                   <div className="absolute inset-0 bg-gray-900/80 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <span className="text-sm font-medium text-gray-300 mb-2 font-serif">
                       {card.category}
@@ -221,7 +215,6 @@ const WhyChose = () => {
             ))}
           </Swiper>
 
-          {/* Custom Navigation Buttons */}
           <button className="swiper-button-next absolute left-0 top-1/2 -translate-y-1/2  p-3 rounded-full shadow-md z-10 transition text-white">
             <FiArrowLeft className="text-xl" />
           </button>

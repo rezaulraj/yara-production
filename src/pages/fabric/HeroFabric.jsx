@@ -4,7 +4,6 @@ import { FiArrowRight } from "react-icons/fi";
 const HeroFabric = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={fabrick}
@@ -23,19 +22,29 @@ const HeroFabric = () => {
             Fabric Processing and Development
           </h1>
 
-          {/* Optional CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <button className="flex items-center px-8 py-3 bg-primary border-2 border-primary text-white font-serif text-lg hover:bg-primary/90 hover:border-primary/90 transition-all duration-300">
-              Explore Our Fabric Library <FiArrowRight className="ml-2" />
+            <button
+              onClick={() => {
+                const section = document.querySelector("#explor-our-fabric");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="flex items-center px-8 py-3 bg-primary border-2 border-primary text-white font-serif text-lg hover:bg-primary/90 hover:border-primary/90 transition-all duration-300"
+            >
+              Explore Our Strength <FiArrowRight className="ml-2" />
             </button>
-            <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300">
+            <button
+              onClick={() => {
+                const section = document.querySelector("#fabric-development");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300"
+            >
               Custom Fabric Development
             </button>
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator (optional) */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-2 bg-white mt-2 rounded-full"></div>

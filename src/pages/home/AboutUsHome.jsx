@@ -6,7 +6,7 @@ const AboutUsHome = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
+        
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             About us
@@ -50,9 +50,9 @@ const AboutUsHome = () => {
           </button>
         </div>
 
-        {/* Image Grid */}
+        
         <div className="relative h-full min-h-[400px]">
-          {/* Top Right Image */}
+        
           <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[1]">
             <img
               src={about1}
@@ -61,7 +61,7 @@ const AboutUsHome = () => {
             />
           </div>
 
-          {/* Bottom Left Image */}
+          
           <div className="absolute bottom-0 left-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[2]">
             <img
               src={about2}

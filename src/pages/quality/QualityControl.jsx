@@ -60,9 +60,11 @@ const QualityControl = () => {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto my-20 px-6">
+    <section
+      id="our-standard-quality"
+      className="max-w-screen-xl mx-auto my-20 px-6"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             Total Quality Control Philosophy
@@ -78,7 +80,6 @@ const QualityControl = () => {
             minimize errors, ensuring:
           </p>
 
-          {/* Quality Features */}
           <div className="grid grid-cols-1 gap-6 mt-6">
             {qualityFeatures.map((feature, index) => (
               <div
@@ -94,7 +95,6 @@ const QualityControl = () => {
             ))}
           </div>
 
-          {/* Technology Commitment */}
           <div className="mt-8 flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
             <FiCpu className="text-3xl text-amber-600 mt-1" />
             <p className="text-gray-600">
@@ -105,7 +105,6 @@ const QualityControl = () => {
           </div>
         </div>
 
-        {/* Main Image */}
         <div className="relative h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg">
           <img
             src={qualityControl}
@@ -124,7 +123,6 @@ const QualityControl = () => {
         </div>
       </div>
 
-      {/* Image Gallery */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
         {qualityControlImages.map((image, index) => (
           <div
@@ -138,9 +136,7 @@ const QualityControl = () => {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span className="text-white text-lg font-medium">
-                Click Me
-              </span>
+              <span className="text-white text-lg font-medium">Click Me</span>
             </div>
           </div>
         ))}

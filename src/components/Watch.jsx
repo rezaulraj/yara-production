@@ -9,7 +9,6 @@ const Watch = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Absolute Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={bgImage}
@@ -19,7 +18,6 @@ const Watch = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
         <div className="max-w-4xl mx-auto">
           <h4 className="text-primary font-serif text-lg font-medium mb-2 tracking-widest">
@@ -29,7 +27,6 @@ const Watch = () => {
             Get to know us – watch our company video now!
           </h2>
 
-          {/* Play Button */}
           <button
             onClick={() => setShowVideo(true)}
             className="group relative inline-flex items-center justify-center"
@@ -42,11 +39,9 @@ const Watch = () => {
         </div>
       </div>
 
-      {/* Video Popup Modal - Now Larger */}
       {showVideo && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-          <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
-            {/* Close Button - Larger and more prominent */}
+          <div className="relative w-full h-full max-w-6xl max-h-[80vh]">
             <button
               onClick={() => setShowVideo(false)}
               className="absolute -top-16 right-0 text-white hover:text-amber-500 transition-colors"
@@ -67,7 +62,6 @@ const Watch = () => {
               </svg>
             </button>
 
-            {/* Video Player - Now Larger */}
             <div className="w-full h-full">
               <ReactPlayer
                 url={youtubeLink}

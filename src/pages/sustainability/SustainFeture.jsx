@@ -37,9 +37,11 @@ const SustainFeature = () => {
   ];
 
   return (
-    <section className="max-w-screen-xl mx-auto my-20 px-6">
+    <section
+      id="our-green-initiatives"
+      className="max-w-screen-xl mx-auto my-20 px-6"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div className="space-y-6">
           <div className="flex items-center space-x-3">
             <FaLeaf className="text-green-500 text-2xl" />
@@ -97,7 +99,6 @@ const SustainFeature = () => {
           </div>
         </div>
 
-        {/* Main Image */}
         <div className="relative h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg">
           <img
             src={susteinable}

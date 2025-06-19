@@ -63,9 +63,11 @@ const FabricProduct = () => {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto my-20 px-6">
+    <section
+      id="fabric-development"
+      className="max-w-screen-xl mx-auto my-20 px-6"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             Dedication to Excellence
@@ -83,7 +85,6 @@ const FabricProduct = () => {
             unparalleled speed and quality.
           </p>
 
-          {/* Benefits Section */}
           <div className="mt-8">
             <h3 className="text-2xl font-serif font-normal text-gray-700 mb-6">
               Benefits of In-House Manufacturing

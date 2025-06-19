@@ -66,7 +66,6 @@ const WhyChoseUs = () => {
       </div>
 
       <div className="mb-16 relative z-10">
-        {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-medium text-gray-800 mb-6">
             Why Choose Us?
@@ -119,7 +118,6 @@ const WhyChoseUs = () => {
           </div>
         </div>
 
-        {/* Gallery Section */}
         <div className="flex items-center gap-4 mb-6">
           <div className="h-px bg-gray-900 flex-1"></div>
           <div className="flex items-center gap-4">
@@ -164,14 +162,12 @@ const WhyChoseUs = () => {
                   onMouseLeave={() => swiperRef.current?.autoplay?.start()}
                   className="relative group overflow-hidden rounded-xl shadow-lg h-80"
                 >
-                  {/* Image */}
                   <img
                     src={card.image}
                     alt={card.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
 
-                  {/* Bottom Text (Visible by default) */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-10 transition-all duration-500 group-hover:opacity-0">
                     <span className="text-sm font-medium text-white bg-primary/90 font-serif px-3 py-1 rounded-full">
                       {card.category}
@@ -181,7 +177,6 @@ const WhyChoseUs = () => {
                     </h3>
                   </div>
 
-                  {/* Full Overlay (Visible on hover) */}
                   <div className="absolute inset-0 bg-gray-900/80 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <span className="text-sm font-medium text-gray-300 mb-2 font-serif">
                       {card.category}
@@ -198,7 +193,6 @@ const WhyChoseUs = () => {
             ))}
           </Swiper>
 
-          {/* Custom Navigation Buttons */}
           <button className="swiper-button-next absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full shadow-md z-10 transition text-white">
             <FiArrowLeft className="text-xl" />
           </button>

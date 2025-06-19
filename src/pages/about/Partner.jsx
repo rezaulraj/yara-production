@@ -10,7 +10,6 @@ const Partner = () => {
   const partnerImages = [
     { src: partner1, alt: "Yara Production Partner 1" },
     { src: partner2, alt: "Yara Production Partner 2" },
-    // Add more images as needed
   ];
 
   const openGallery = (index) => {
@@ -30,16 +29,15 @@ const Partner = () => {
   };
 
   return (
-    <div className="bg-amber-50">
+    <section className="bg-amber-50">
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
           <div className="space-y-8">
             <h4 className="text-primary font-serif text-lg tracking-widest">
-              UNIQUE
+              Distinctive
             </h4>
             <h2 className="text-4xl font-serif font-medium text-gray-800 leading-tight">
-              A Unique Partner Of Worldwide Brands
+              A Distinctive Partner Of Worldwide Brands
             </h2>
             <p className="text-gray-600 leading-relaxed">
               At Yara Production, we empower brands with our
@@ -66,7 +64,6 @@ const Partner = () => {
             </p>
           </div>
 
-          {/* Image Gallery */}
           <div className="grid grid-cols-2 gap-4">
             {partnerImages.map((image, index) => (
               <div
@@ -87,7 +84,6 @@ const Partner = () => {
           </div>
         </div>
 
-        {/* Image Popup Gallery */}
         {isGalleryOpen && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <button
@@ -123,7 +119,7 @@ const Partner = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

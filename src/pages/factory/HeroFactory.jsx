@@ -3,7 +3,6 @@ import heroFactory from "../../assets/image/factory/hero.jpg?url";
 const HeroFactory = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={heroFactory}
@@ -22,14 +21,18 @@ const HeroFactory = () => {
             Knitwear Production Factory
           </h1>
 
-          {/* Optional CTA Button */}
-          <button className="mt-8 px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300">
+          <button
+            onClick={() => {
+              const section = document.querySelector("#view-our-work");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="mt-8 px-8 py-3 bg-transparent border-2 border-white text-white font-serif text-lg hover:bg-white hover:text-black transition-all duration-300"
+          >
             View Our Work
           </button>
         </div>
       </div>
 
-      {/* Scroll indicator (optional) */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-2 bg-white mt-2 rounded-full"></div>

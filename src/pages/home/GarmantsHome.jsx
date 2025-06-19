@@ -14,42 +14,49 @@ const GarmantsHome = () => {
       title: "T-Shirt",
       image: garmant1,
       btn: "Details",
+      path: "/t-shirt-production",
     },
     {
       title: "Sweatshirt",
       image: garmant2,
       btn: "Details",
+      path: "/sweatshirt-production",
     },
     {
       title: "Tracksuit",
       image: garmant3,
       btn: "Details",
+      path: "/tracksuit-production",
     },
     {
       title: "Trousers",
       image: garmant4,
       btn: "Details",
+      path: "/trousers-production",
     },
     {
       title: "Collar Shirts",
       image: garmant5,
       btn: "Details",
+      path: "/collar-shirts-production",
     },
     {
       title: "Jacket",
       image: garmant6,
       btn: "Details",
+      path: "/jacket-production",
     },
     {
       title: "Coat",
       image: garmant7,
       btn: "Details",
+      path: "/coat-production",
     },
   ];
 
   return (
-    <section className="bg-amber-50">
-      {/* Text Content - Left Aligned */}
+    <section className="bg-amber-50" id="discover-out-collection">
+   
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="text-left mb-16">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px] mb-4">
@@ -60,33 +67,36 @@ const GarmantsHome = () => {
           </h2>
         </div>
 
-        {/* Image Grid - 3 Columns */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {garmantProducts.map((product, index) => (
             <div
               key={index}
               className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-500"
             >
-              {/* Image */}
+             
               <img
                 src={product.image}
                 alt={product.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Title Overlay */}
+            
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <div className="relative">
-                  <h3 className="text-2xl font-serif text-white mb-2">
+                  <a
+                    href={product.path}
+                    className="text-2xl font-serif text-white mb-2"
+                  >
                     {product.title}
-                  </h3>
+                  </a>
 
-                  {/* Animated Border */}
+                
                   <div className="w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full mb-3"></div>
 
-                  {/* Hidden Details Link */}
+                 
                   <a
-                    href="#"
+                    href={product.path}
                     className="flex items-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 text-white font-medium"
                   >
                     {product.btn}

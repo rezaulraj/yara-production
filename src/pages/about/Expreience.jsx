@@ -3,12 +3,12 @@ import about1 from "../../assets/image/home/about1.png?url";
 import about2 from "../../assets/image/home/about2.png?url";
 const Expreience = () => {
   return (
-    <section className="max-w-screen-xl mx-auto my-20 px-6">
+    <section id="our-story" className="max-w-screen-xl mx-auto my-20 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
+        
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
-            Dedication To High-Quality
+            Dedication To Premium Quality
           </h4>
           <h2 className="font-serif text-2xl md:text-3xl tracking-widest font-normal uppercase text-gray-700 leading-tight">
             Yara Production
@@ -35,9 +35,9 @@ const Expreience = () => {
           </p>
         </div>
 
-        {/* Image Grid */}
+       
         <div className="relative h-full min-h-[400px]">
-          {/* Top Right Image */}
+         
           <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[1]">
             <img
               src={about1}
@@ -46,7 +46,7 @@ const Expreience = () => {
             />
           </div>
 
-          {/* Bottom Left Image */}
+         
           <div className="absolute bottom-0 left-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[2]">
             <img
               src={about2}

@@ -30,9 +30,8 @@ const AboutFactory = () => {
     setCurrentImageIndex(newIndex);
   };
   return (
-    <section className="max-w-screen-xl mx-auto my-20 px-6">
+    <section id="view-our-work" className="max-w-screen-xl mx-auto my-20 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             Commitment to Excellence
@@ -79,7 +78,7 @@ const AboutFactory = () => {
           />
         </div>
       </div>
-      {/* Image Gallery */}
+
       <div className="grid grid-cols-3 gap-4 mt-10">
         {factImages.map((image, index) => (
           <div

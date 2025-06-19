@@ -9,6 +9,13 @@ import FabricPage from "./pages/fabric/FabricPage";
 import QualityPage from "./pages/quality/QualityPage";
 import SustainabilityPage from "./pages/sustainability/SustainabilityPage";
 import ContactPage from "./pages/contact/ContactPage";
+import TShirtPage from "./pages/products/t-shirt/TShirtPage";
+import SweatshirtPage from "./pages/products/sweatshirt/SweatshirtPage";
+import TracksuitPage from "./pages/products/tracksuit/TracksuitPage";
+import TrousersPage from "./pages/products/trousers/TrousersPage";
+import ColorShirtPage from "./pages/products/collar-shirts/ColorShirtPage";
+import JacketPage from "./pages/products/jacket/JacketPage";
+import CoatPage from "./pages/products/coat/CoatPage";
 function App() {
   return (
     <>
@@ -21,6 +28,16 @@ function App() {
           <Route path="/our-qualitys" element={<QualityPage />} />
           <Route path="/sustainability" element={<SustainabilityPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/t-shirt-production" element={<TShirtPage />} />
+          <Route path="/sweatshirt-production" element={<SweatshirtPage />} />
+          <Route path="/tracksuit-production" element={<TracksuitPage />} />
+          <Route path="/trousers-production" element={<TrousersPage />} />
+          <Route
+            path="/collar-shirts-production"
+            element={<ColorShirtPage />}
+          />
+          <Route path="/jacket-production" element={<JacketPage />} />
+          <Route path="/coat-production" element={<CoatPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

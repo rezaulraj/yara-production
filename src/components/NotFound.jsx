@@ -15,7 +15,7 @@ const NotFound = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href="javascript:void(0)"
+              href="/"
               className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-primary rounded-lg"
             >
               Go back

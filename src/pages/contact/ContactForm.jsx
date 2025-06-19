@@ -34,7 +34,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
+   
     setTimeout(() => {
       setIsSubmitting(false);
       setShowSuccess(true);
@@ -49,8 +49,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 relative">
-      {/* Success Popup */}
+    <section id="get-in-touch" className="bg-gray-50 py-16 relative">
+      
       {showSuccess && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative">
@@ -91,7 +91,7 @@ const ContactForm = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Side - Contact Information */}
+        
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-serif font-normal text-gray-800 mb-6 flex items-center">
@@ -129,7 +129,7 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {/* Map */}
+           
             <div className="bg-white p-4 rounded-lg shadow-md h-96">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.279637015383!2d28.77678231572719!3d41.0215143269281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzE3LjQiTiAyOMKwNDYnNDkuOSJF!5e0!3m2!1sen!2str!4v1620000000000!5m2!1sen!2str"
@@ -143,7 +143,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Right Side - Contact Form */}
+         
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-xl font-serif font-normal text-gray-800 mb-6 flex items-center">
               <FiSend className="text-amber-600 mr-2" />
