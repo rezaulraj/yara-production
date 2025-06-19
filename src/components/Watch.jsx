@@ -26,7 +26,7 @@ const Watch = () => {
             YARA PRODUCTION
           </h4>
           <h2 className="text-white text-3xl md:text-5xl font-serif font-medium mb-8 leading-tight">
-            Meet us in 2 mins! Watch our Company Video
+            Get to know us – watch our company video now!
           </h2>
 
           {/* Play Button */}
