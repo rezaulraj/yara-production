@@ -98,7 +98,7 @@ const Header = () => {
             </a>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-7">
             {navLinks.map((link, index) => (
               <div
                 key={index}
