@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+// import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/home/HomePage";
 import NotFound from "./components/NotFound";
@@ -16,60 +16,11 @@ import TrousersPage from "./pages/products/trousers/TrousersPage";
 import ColorShirtPage from "./pages/products/collar-shirts/ColorShirtPage";
 import JacketPage from "./pages/products/jacket/JacketPage";
 import CoatPage from "./pages/products/coat/CoatPage";
-import logo from "/logo1.png";
-
-const LoadingSpinner = () => {
-  return (
-    <div
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        backgroundColor: "rgba(255, 255, 255, 1)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        zIndex: 9999,
-      }}
-    >
-      <img
-        src={logo}
-        alt="Loading..."
-        style={{
-          width: "100px",
-          height: "100px",
-          animation: "spin 1s linear infinite",
-        }}
-      />
-      <style>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
-    </div>
-  );
-};
-
+// import logo
 function App() {
-  const [loading, setLoading] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, [location.key]);
-
   return (
     <>
-      {loading && <LoadingSpinner />}
-      <Routes location={location}>
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-yara" element={<AboutPage />} />
