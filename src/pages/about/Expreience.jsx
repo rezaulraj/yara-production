@@ -5,7 +5,6 @@ const Expreience = () => {
   return (
     <section id="our-story" className="max-w-screen-xl mx-auto my-20 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             Dedication To Premium Quality
@@ -21,7 +20,7 @@ const Expreience = () => {
             through in-house fabric production.
             <br />
             <br />
-            Our integrated facility in Başakşehir, Istanbul, enables us to
+            Our integrated facility in Morella, Castellón, Spain enables us to
             oversee all production stages, from selecting Premium materials like
             cotton, silk, wool, and cashmere to deliver finished products. This
             approach ensures exceptional quality and efficiency, supported by
@@ -35,9 +34,7 @@ const Expreience = () => {
           </p>
         </div>
 
-       
         <div className="relative h-full min-h-[400px]">
-         
           <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[1]">
             <img
               src={about1}
@@ -45,8 +42,6 @@ const Expreience = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
-         
           <div className="absolute bottom-0 left-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[2]">
             <img
               src={about2}

@@ -6,7 +6,6 @@ const AboutUsHome = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             About us
@@ -21,8 +20,8 @@ const AboutUsHome = () => {
             <br />
             <br />
             Perfectly filling the gap in the production of high quality and
-            exclusive boutique garments in the sector, GYT Textile is the leader
-            in Turkey in the production of niche and high quality knitwear
+            exclusive boutique garments in the sector, Yara Production is the
+            leader in Spain in the production of niche and high quality knitwear
             products by producing in-house cotton, silk, wool, linen, cashmere,
             tencel, viscose and nylon knitted fabrics, starting from selecting
             the yarn for the garment.
@@ -50,9 +49,7 @@ const AboutUsHome = () => {
           </button>
         </div>
 
-        
         <div className="relative h-full min-h-[400px]">
-        
           <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[1]">
             <img
               src={about1}
@@ -61,7 +58,6 @@ const AboutUsHome = () => {
             />
           </div>
 
-          
           <div className="absolute bottom-0 left-0 w-3/4 h-3/4 rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 z-[2]">
             <img
               src={about2}

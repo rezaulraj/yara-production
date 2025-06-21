@@ -16,7 +16,7 @@ import TrousersPage from "./pages/products/trousers/TrousersPage";
 import ColorShirtPage from "./pages/products/collar-shirts/ColorShirtPage";
 import JacketPage from "./pages/products/jacket/JacketPage";
 import CoatPage from "./pages/products/coat/CoatPage";
-// import logo
+
 function App() {
   return (
     <>
