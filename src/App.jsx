@@ -61,7 +61,7 @@ function App() {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [location.key]);
