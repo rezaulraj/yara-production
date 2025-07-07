@@ -7,17 +7,45 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
+  FaYoutube,
+  FaTiktok,
+  FaPinterest,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "/logo2.png?url";
 import { LuContact } from "react-icons/lu";
+import { FaX } from "react-icons/fa6";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaFacebook className="text-lg" />, href: "#" },
-    { icon: <FaInstagram className="text-lg" />, href: "#" },
-    { icon: <FaLinkedin className="text-lg" />, href: "#" },
-    { icon: <FaTwitter className="text-lg" />, href: "#" },
+    {
+      icon: <FaFacebook className="text-lg" />,
+      href: "https://www.facebook.com/yaraproductions0/",
+    },
+    {
+      icon: <FaInstagram className="text-lg" />,
+      href: "https://www.instagram.com/yaraproductions0/",
+    },
+    {
+      icon: <FaYoutube className="text-lg" />,
+      href: "https://www.youtube.com/@YaraProductions",
+    },
+    {
+      icon: <FaTiktok className="text-lg" />,
+      href: "https://www.tiktok.com/@yaraproductions0",
+    },
+    {
+      icon: <FaLinkedin className="text-lg" />,
+      href: "https://www.linkedin.com/company/107771948/admin/dashboard/",
+    },
+    {
+      icon: <FaX className="text-lg" />,
+      href: "https://x.com/yaraproduction0",
+    },
+    {
+      icon: <FaPinterest className="text-lg" />,
+      href: "https://www.pinterest.com/yaraproductions/",
+    },
   ];
 
   const exploreLinks = [
@@ -58,11 +86,12 @@ const Footer = () => {
               knitted clothing products. We specialize in producing exceptional
               quality fabrics from premium yarns.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 flex-wrap gap-y-2 items-center">
               {socialLinks.map((link, index) => (
                 <motion.a
                   key={index}
                   href={link.href}
+                  target="_blank"
                   className="bg-gray-700 hover:bg-amber-600 text-white p-3 rounded-full transition-all duration-300"
                   whileHover={{ y: -4, scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
