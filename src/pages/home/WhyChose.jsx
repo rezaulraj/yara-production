@@ -56,7 +56,7 @@ const WhyChose = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto px-6 py-20 relative">
+    <div id="why-chose" className="max-w-screen-xl mx-auto px-6 py-20 relative">
       <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
         <div
           className="absolute inset-0 bg-repeat"

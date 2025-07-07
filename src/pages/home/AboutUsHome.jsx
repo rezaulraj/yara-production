@@ -27,7 +27,15 @@ const AboutUsHome = () => {
             from selecting the yarn for the garment.
           </p>
 
-          <button className="relative inline-flex items-center px-8 py-3 overflow-hidden text-lg font-medium text-primary border-2 border-primary hover:text-white group">
+          <button
+            onClick={() => {
+              const section = document.querySelector(
+                "#why-chose"
+              );
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="relative inline-flex items-center px-8 py-3 overflow-hidden text-lg font-medium text-primary border-2 border-primary hover:text-white group"
+          >
             <span className="absolute left-0 block w-full h-0 transition-all bg-primary opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
             <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
               <svg
