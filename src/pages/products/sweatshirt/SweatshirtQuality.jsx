@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import swwatshirt1 from "../../../assets/image/sweatshirt/sw1.jpg?url";
-import swwatshirt2 from "../../../assets/image/sweatshirt/sw2.jpg?url";
-import swwatshirt3 from "../../../assets/image/sweatshirt/sw3.jpg?url";
-import swwatshirt4 from "../../../assets/image/sweatshirt/sw4.jpg?url";
-import swwatshirt5 from "../../../assets/image/sweatshirt/sw5.jpg?url";
-import swwatshirt6 from "../../../assets/image/sweatshirt/sw6.jpg?url";
+import swwatshirt1 from "../../../assets/image/menufuture/Production/sweatshirt/ss2.jpg?url";
+import swwatshirt2 from "../../../assets/image/menufuture/Production/sweatshirt/ss2.jpg?url";
+import swwatshirt3 from "../../../assets/image/menufuture/Production/sweatshirt/ss3.jpg?url";
+import swwatshirt4 from "../../../assets/image/menufuture/Production/sweatshirt/ss4.jpg?url";
+import swwatshirt5 from "../../../assets/image/menufuture/Production/sweatshirt/ss5.jpg?url";
+import swwatshirt6 from "../../../assets/image/menufuture/Production/sweatshirt/ss6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const SweatshirtQuality = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -61,8 +61,8 @@ const SweatshirtQuality = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              
               </div>
             </div>
           ))}

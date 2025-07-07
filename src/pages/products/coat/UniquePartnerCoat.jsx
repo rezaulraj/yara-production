@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
-import partner1 from "../../../assets/image/about/partner1.jpg?url";
-import partner2 from "../../../assets/image/about/partner2.jpg?url";
+import partner1 from "../../../assets/image/menufuture/Production/coat/suit5.jpg?url";
+import partner2 from "../../../assets/image/menufuture/Production/coat/suit6.jpg?url";
 const UniquePartnerCoat = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -90,8 +90,8 @@ const UniquePartnerCoat = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-medium">View</span>
+                <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  {/* <span className="text-white text-lg font-medium">View</span> */}
                 </div>
               </div>
             ))}

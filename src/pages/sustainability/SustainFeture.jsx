@@ -1,5 +1,5 @@
 import React from "react";
-import susteinable from "../../assets/image/sustainable/sustain.jpg?url";
+import susteinable from "../../assets/image/menufuture/Sustainability/forabrighterfuture.jpg?url";
 import {
   FiCpu,
   FiRepeat,
@@ -105,7 +105,7 @@ const SustainFeature = () => {
             alt="Sustainable manufacturing"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent flex items-start p-6">
+          <div className="absolute inset-0 bg-gradient-to-b from-green-700/20  to-transparent flex items-start p-6">
             <span className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-full text-sm font-medium">
               <FaLeaf className="mr-2" />
               Sustainable Practices

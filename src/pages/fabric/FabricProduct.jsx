@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import fabricImage from "../../assets/image/fabric/fabric.jpg?url";
-import fabric1 from "../../assets/image/fabric/fab1.jpg?url";
-import fabric2 from "../../assets/image/fabric/fab2.jpg?url";
-import fabric3 from "../../assets/image/fabric/fab3.jpg?url";
+import fabricImage from "../../assets/image/menufuture/OurFabric/inhousemachine.jpg?url";
+import fabric1 from "../../assets/image/menufuture/OurFabric/m1.jpg?url";
+import fabric2 from "../../assets/image/menufuture/OurFabric/m2.jpg?url";
+import fabric3 from "../../assets/image/menufuture/OurFabric/m3.jpg?url";
 import {
   FiChevronLeft,
   FiChevronRight,

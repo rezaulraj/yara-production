@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import trouserqulity1 from "../../../assets/image/trousers/trs1.jpg?url";
-import trouserqulity2 from "../../../assets/image/trousers/trs2.jpg?url";
-import trouserqulity3 from "../../../assets/image/trousers/trs3.jpg?url";
-import trouserqulity4 from "../../../assets/image/trousers/trs4.jpg?url";
-import trouserqulity5 from "../../../assets/image/trousers/trs5.jpg?url";
-import trouserqulity6 from "../../../assets/image/trousers/trs6.jpg?url";
+import trouserqulity1 from "../../../assets/image/menufuture/Production/trousers/trouser1.jpg?url";
+import trouserqulity2 from "../../../assets/image/menufuture/Production/trousers/trouser2.jpg?url";
+import trouserqulity3 from "../../../assets/image/menufuture/Production/trousers/trouser3.jpg?url";
+import trouserqulity4 from "../../../assets/image/menufuture/Production/trousers/trouser4.jpg?url";
+import trouserqulity5 from "../../../assets/image/menufuture/Production/trousers/trouser5.jpg?url";
+import trouserqulity6 from "../../../assets/image/menufuture/Production/trousers/trouser6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const TrouserQulity = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -58,8 +58,8 @@ const TrouserQulity = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <span className="text-white text-lg font-medium">Click Me</span> */}
               </div>
             </div>
           ))}

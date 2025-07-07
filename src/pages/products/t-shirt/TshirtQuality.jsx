@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import tshirt1 from "../../../assets/image/tshirt/ts1.jpg?url";
-import tshirt2 from "../../../assets/image/tshirt/ts2.jpg?url";
-import tshirt3 from "../../../assets/image/tshirt/ts3.jpg?url";
-import tshirt4 from "../../../assets/image/tshirt/ts4.jpg?url";
-import tshirt5 from "../../../assets/image/tshirt/ts5.jpg?url";
-import tshirt6 from "../../../assets/image/tshirt/ts6.jpg?url";
+import tshirt1 from "../../../assets/image/menufuture/Production/tshirt/ts1.jpg?url";
+import tshirt2 from "../../../assets/image/menufuture/Production/tshirt/ts2.jpg?url";
+import tshirt3 from "../../../assets/image/menufuture/Production/tshirt/ts3.jpg?url";
+import tshirt4 from "../../../assets/image/menufuture/Production/tshirt/ts4.jpg?url";
+import tshirt5 from "../../../assets/image/menufuture/Production/tshirt/ts5.jpg?url";
+import tshirt6 from "../../../assets/image/menufuture/Production/tshirt/ts6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const TshirtQuality = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -58,8 +58,8 @@ const TshirtQuality = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+               
               </div>
             </div>
           ))}

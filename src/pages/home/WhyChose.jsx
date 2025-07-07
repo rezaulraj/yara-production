@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import logo from "/logo1.png?url";
 import machine from "../../assets/image/menufuture/AboutUs/m1.jpg?url";
 import image1 from "../../assets/image/menufuture/Homepage/inhousematien.jpg?url";
-import image2 from "../../assets/image/home/about4.jpg?url";
+import image2 from "../../assets/image/menufuture/Homepage/inhousecollarmanuacture.jpg?url";
 import image3 from "../../assets/image/menufuture/Homepage/fabriccuttingtechnologies.jpg?url";
 import image4 from "../../assets/image/menufuture/Homepage/sewingllines.jpg?url";
 import image5 from "../../assets/image/menufuture/Homepage/finishing.jpg?url";

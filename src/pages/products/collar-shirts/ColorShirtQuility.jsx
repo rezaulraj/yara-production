@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import colorsqulity1 from "../../../assets/image/collor-shirt/cs1.jpg?url";
-import colorsqulity2 from "../../../assets/image/collor-shirt/cs2.jpg?url";
-import colorsqulity3 from "../../../assets/image/collor-shirt/cs3.jpg?url";
-import colorsqulity4 from "../../../assets/image/collor-shirt/cs4.jpg?url";
-import colorsqulity5 from "../../../assets/image/collor-shirt/cs5.jpg?url";
-import colorsqulity6 from "../../../assets/image/collor-shirt/cs6.jpg?url";
+import colorsqulity1 from "../../../assets/image/menufuture/Production/collarshirts/s1.jpg?url";
+import colorsqulity2 from "../../../assets/image/menufuture/Production/collarshirts/s2.jpg?url";
+import colorsqulity3 from "../../../assets/image/menufuture/Production/collarshirts/s3.jpg?url";
+import colorsqulity4 from "../../../assets/image/menufuture/Production/collarshirts/s4.jpg?url";
+import colorsqulity5 from "../../../assets/image/menufuture/Production/collarshirts/s5.jpg?url";
+import colorsqulity6 from "../../../assets/image/menufuture/Production/collarshirts/s6.jpg?url";
 const ColorShirtQuility = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -58,8 +58,8 @@ const ColorShirtQuility = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <span className="text-white text-lg font-medium">Click Me</span> */}
               </div>
             </div>
           ))}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import tracksuit1 from "../../../assets/image/tracksuit/trs1.jpg?url";
-import tracksuit2 from "../../../assets/image/tracksuit/trs2.jpg?url";
-import tracksuit3 from "../../../assets/image/tracksuit/trs3.jpg?url";
-import tracksuit4 from "../../../assets/image/tracksuit/trs4.jpg?url";
-import tracksuit5 from "../../../assets/image/tracksuit/trs5.jpg?url";
-import tracksuit6 from "../../../assets/image/tracksuit/trs6.jpg?url";
+import tracksuit1 from "../../../assets/image/menufuture/Production/tracksuit/ts1.jpg?url";
+import tracksuit2 from "../../../assets/image/menufuture/Production/tracksuit/ts2.jpg?url";
+import tracksuit3 from "../../../assets/image/menufuture/Production/tracksuit/ts3.jpg?url";
+import tracksuit4 from "../../../assets/image/menufuture/Production/tracksuit/ts4.jpg?url";
+import tracksuit5 from "../../../assets/image/menufuture/Production/tracksuit/ts5.jpg?url";
+import tracksuit6 from "../../../assets/image/menufuture/Production/tracksuit/ts6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const TracksuitQuility = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -59,8 +59,8 @@ const TracksuitQuility = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <span className="text-white text-lg font-medium">Click Me</span> */}
               </div>
             </div>
           ))}

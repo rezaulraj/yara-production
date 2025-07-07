@@ -1,10 +1,9 @@
 import React from "react";
-import heroImage from "../../assets/image/about/hero.jpg?url";
+import heroImage from "../../assets/image/hero.jpg?url";
 
 const HeroAbout = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-     
       <div className="absolute inset-0 w-full h-full">
         <img
           src={heroImage}
@@ -23,7 +22,6 @@ const HeroAbout = () => {
             OUR JOURNEY
           </h1>
 
-         
           <button
             onClick={() => {
               const section = document.querySelector("#our-story");
@@ -36,7 +34,6 @@ const HeroAbout = () => {
         </div>
       </div>
 
-     
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-2 bg-white mt-2 rounded-full"></div>

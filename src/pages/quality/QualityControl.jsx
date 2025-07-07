@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import qualityControl from "../../assets/image/quality/qualitycontrol.jpg?url";
-import qc1 from "../../assets/image/quality/qc1.jpg?url";
-import qc2 from "../../assets/image/quality/qc2.jpg?url";
-import qc3 from "../../assets/image/quality/qc3.jpg?url";
+import qualityControl from "../../assets/image/menufuture/Quality/1.jpg?url";
+import qc1 from "../../assets/image/menufuture/Quality/qualitycheck.jpg?url";
+import qc2 from "../../assets/image/menufuture/Quality/finishing.jpg?url";
+import qc3 from "../../assets/image/menufuture/Quality/final.jpg?url";
 import {
   FiChevronLeft,
   FiChevronRight,
@@ -109,7 +109,7 @@ const QualityControl = () => {
           <img
             src={qualityControl}
             alt="Quality control process"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-6">
             <div className="text-white">

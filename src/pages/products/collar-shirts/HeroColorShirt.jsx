@@ -1,5 +1,5 @@
 import React from "react";
-import heroCollorShirt from "../../../assets/image/hero.jpg?url";
+import heroCollorShirt from "../../../assets/image/menufuture/Bannar/2.png?url";
 const HeroColorShirt = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -13,7 +13,7 @@ const HeroColorShirt = () => {
       </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h3 className="text-xl md:text-2xl font-serif font-light tracking-[5px] text-primary mb-4">
             YARA PRODUCTION
           </h3>

@@ -1,5 +1,5 @@
 import React from "react";
-import heroimage from "../../assets/image/quality/hero.jpg?url";
+import heroimage from "../../assets/image/menufuture/Quality/herosection.jpg?url";
 const HeroQulity = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

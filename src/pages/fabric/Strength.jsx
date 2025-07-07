@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import fabricdetali1 from "../../assets/image/fabric/fabd1.jpg?url";
-import fabricdetali2 from "../../assets/image/fabric/fabd2.jpg?url";
+import fabricdetali1 from "../../assets/image/menufuture/OurFabric/fabric1.jpg?url";
+import fabricdetali2 from "../../assets/image/menufuture/OurFabric/fabric2.jpg?url";
 import {
   FiChevronLeft,
   FiChevronRight,
@@ -124,10 +124,10 @@ const Strength = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-medium">
+                <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  {/* <span className="text-white text-lg font-medium">
                     Click Me
-                  </span>
+                  </span> */}
                 </div>
               </div>
             ))}

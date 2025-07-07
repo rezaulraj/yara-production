@@ -1,5 +1,5 @@
 import React from "react";
-import fabrick from "../../assets/image/fabric/hero.jpg?url";
+import fabrick from "../../assets/image/menufuture/OurFabric/herosection.jpg?url";
 import { FiArrowRight } from "react-icons/fi";
 const HeroFabric = () => {
   return (

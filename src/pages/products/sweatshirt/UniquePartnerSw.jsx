@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
-import partner1 from "../../../assets/image/about/partner1.jpg?url";
-import partner2 from "../../../assets/image/about/partner2.jpg?url";
+import partner1 from "../../../assets/image/menufuture/Production/tshirt/ts5.jpg?url";
+import partner2 from "../../../assets/image/menufuture/Production/tshirt/ts6.jpg?url";
 
 const UniquePartnerSw = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -42,7 +42,12 @@ const UniquePartnerSw = () => {
               Trusted by Leading Brands Worldwide
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Yara Production empowers world-renowned brands with its design and production expertise. Our in-house design center, staffed by trend-savvy designers, fuels innovation in knitted products, fabrics, and prints. We craft original collections that adorn the showcases of esteemed brands worldwide, reflecting our commitment to quality and style.
+              Yara Production empowers world-renowned brands with its design and
+              production expertise. Our in-house design center, staffed by
+              trend-savvy designers, fuels innovation in knitted products,
+              fabrics, and prints. We craft original collections that adorn the
+              showcases of esteemed brands worldwide, reflecting our commitment
+              to quality and style.
             </p>
             <ul className="text-gray-600 space-y-2 pl-5">
               <li className="relative before:absolute before:-left-5 before:top-2 before:w-2 before:h-2 before:bg-amber-600 before:rounded-full">
@@ -78,9 +83,7 @@ const UniquePartnerSw = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-medium">View</span>
-                </div>
+                <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"></div>
               </div>
             ))}
           </div>

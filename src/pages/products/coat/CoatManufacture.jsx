@@ -1,5 +1,5 @@
 import React from "react";
-import coatImage from "../../../assets/image/coat/jacket.jpg?url";
+import coatImage from "../../../assets/image/menufuture/Production/coat.jpg?url";
 import {
   FiPackage,
   FiTrendingUp,

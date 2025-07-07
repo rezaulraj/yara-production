@@ -1,5 +1,5 @@
 import React from "react";
-import heroTracksuit from "../../../assets/image/hero.jpg?url";
+import heroTracksuit from "../../../assets/image/menufuture/Bannar/2.png?url";
 const HeroTracksuit = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

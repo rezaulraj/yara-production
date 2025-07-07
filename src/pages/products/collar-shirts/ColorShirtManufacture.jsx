@@ -1,5 +1,5 @@
 import React from "react";
-import collarImage from "../../../assets/image/collor-shirt/collor-shirt.jpg?url";
+import collarImage from "../../../assets/image/menufuture/Production/collar-shirt.jpg?url";
 import {
   FiAward,
   FiPackage,

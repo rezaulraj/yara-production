@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import coatqulity1 from "../../../assets/image/coat/jk1.jpg?url";
-import coatqulity2 from "../../../assets/image/coat/jk2.jpg?url";
-import coatqulity3 from "../../../assets/image/coat/jk3.jpg?url";
-import coatqulity4 from "../../../assets/image/coat/jk4.jpg?url";
-import coatqulity5 from "../../../assets/image/coat/jk5.jpg?url";
-import coatqulity6 from "../../../assets/image/coat/jk6.jpg?url";
+import coatqulity1 from "../../../assets/image/menufuture/Production/coat/suit1.jpg?url";
+import coatqulity2 from "../../../assets/image/menufuture/Production/coat/suit2.jpg?url";
+import coatqulity3 from "../../../assets/image/menufuture/Production/coat/suit3.jpg?url";
+import coatqulity4 from "../../../assets/image/menufuture/Production/coat/suit4.jpg?url";
+import coatqulity5 from "../../../assets/image/menufuture/Production/coat/suit5.jpg?url";
+import coatqulity6 from "../../../assets/image/menufuture/Production/coat/suit6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const CoatQualtity = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -58,8 +58,8 @@ const CoatQualtity = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <span className="text-white text-lg font-medium">Click Me</span> */}
               </div>
             </div>
           ))}

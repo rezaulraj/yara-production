@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import jacketqulity1 from "../../../assets/image/jacket/jk1.jpg?url";
-import jacketqulity2 from "../../../assets/image/jacket/jk2.jpg?url";
-import jacketqulity3 from "../../../assets/image/jacket/jk3.jpg?url";
-import jacketqulity4 from "../../../assets/image/jacket/jk4.jpg?url";
-import jacketqulity5 from "../../../assets/image/jacket/jk5.jpg?url";
-import jacketqulity6 from "../../../assets/image/jacket/jk6.jpg?url";
+import jacketqulity1 from "../../../assets/image/menufuture/Production/jacket/c1.jpg?url";
+import jacketqulity2 from "../../../assets/image/menufuture/Production/jacket/c2.jpg?url";
+import jacketqulity3 from "../../../assets/image/menufuture/Production/jacket/c3.jpg?url";
+import jacketqulity4 from "../../../assets/image/menufuture/Production/jacket/c4.jpg?url";
+import jacketqulity5 from "../../../assets/image/menufuture/Production/jacket/c5.jpg?url";
+import jacketqulity6 from "../../../assets/image/menufuture/Production/jacket/c6.jpg?url";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 const JacketQuility = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -60,8 +60,8 @@ const JacketQuility = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-medium">Click Me</span>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                {/* <span className="text-white text-lg font-medium">Click Me</span> */}
               </div>
             </div>
           ))}

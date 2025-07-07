@@ -1,5 +1,5 @@
 import React from "react";
-import heroJacktet from "../../../assets/image/hero.jpg?url";
+import heroJacktet from "../../../assets/image/menufuture/Bannar/2.png?url";
 const HeroJacket = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

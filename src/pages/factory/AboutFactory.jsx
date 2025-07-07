@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
-import factimage from "../../assets/image/factory/factimg.jpg?url";
-import facti1 from "../../assets/image/factory/fact1.jpg?url";
-import facti2 from "../../assets/image/factory/fact2.jpg?url";
-import facti3 from "../../assets/image/factory/fact3.jpg?url";
+import factimage from "../../assets/image/menufuture/Factory/factory.jpg?url";
+import facti1 from "../../assets/image/menufuture/Factory/m1.jpg?url";
+import facti2 from "../../assets/image/menufuture/Factory/m2.jpg?url";
+import facti3 from "../../assets/image/menufuture/Factory/m3.jpg?url";
 const AboutFactory = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -74,8 +74,9 @@ const AboutFactory = () => {
           <img
             src={factimage}
             alt="Textile production"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center rounded-md"
           />
+          <div className="absolute inset-0 bg-black/20 rounded-md"></div>
         </div>
       </div>
 

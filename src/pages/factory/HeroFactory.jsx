@@ -1,5 +1,5 @@
 import React from "react";
-import heroFactory from "../../assets/image/factory/hero.jpg?url";
+import heroFactory from "../../assets/image/menufuture/Factory/herosection.jpg?url";
 const HeroFactory = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

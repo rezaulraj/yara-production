@@ -1,5 +1,5 @@
 import React from "react";
-import heroimage from "../../assets/image/sustainable/hero.jpg?url";
+import heroimage from "../../assets/image/menufuture/Sustainability/heorsection.jpg?url";
 const HeroSustainability = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

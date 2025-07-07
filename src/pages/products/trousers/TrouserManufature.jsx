@@ -1,5 +1,5 @@
 import React from "react";
-import trouserImage from "../../../assets/image/trousers/trousers.jpg?url";
+import trouserImage from "../../../assets/image/menufuture/Production/trousers/trouser5.jpg?url";
 import {
   FiAward,
   FiPackage,

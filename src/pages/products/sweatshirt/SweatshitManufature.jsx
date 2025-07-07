@@ -1,5 +1,5 @@
 import React from "react";
-import sweatshirt from "../../../assets/image/sweatshirt/sweatshirt.jpg?url";
+import sweatshirt from "../../../assets/image/menufuture/Production/sweatshirt-sweater.jpg";
 import {
   FiAward,
   FiPackage,

@@ -1,5 +1,5 @@
 import React from "react";
-import tracksuitImage from "../../../assets/image/tracksuit/tracksuit.jpg?url";
+import tracksuitImage from "../../../assets/image/menufuture/Production/tracksuit/ts3.jpg?url";
 import {
   FiAward,
   FiPackage,

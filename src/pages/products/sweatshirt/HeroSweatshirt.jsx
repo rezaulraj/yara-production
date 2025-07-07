@@ -1,12 +1,12 @@
 import React from "react";
-import heroTshirt from "../../../assets/image/hero.jpg?url";
+import heroSweatshirt from "../../../assets/image/menufuture/Bannar/2.png?url";
 const HeroSweatshirt = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src={heroTshirt}
+          src={heroSweatshirt}
           alt="Yara Production Facility"
           className="w-full h-full object-cover object-center"
         />

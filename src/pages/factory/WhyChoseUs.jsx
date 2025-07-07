@@ -5,13 +5,13 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import logo from "/logo1.png?url";
-import image1 from "../../assets/image/home/about3.jpg?url";
-import image2 from "../../assets/image/home/about4.jpg?url";
-import image3 from "../../assets/image/home/about5.jpg?url";
-import image4 from "../../assets/image/home/about6.jpg?url";
-import image5 from "../../assets/image/home/about7.jpg?url";
-import image6 from "../../assets/image/home/about8.jpg?url";
-import image7 from "../../assets/image/home/about9.jpg?url";
+import image1 from "../../assets/image/menufuture/Homepage/inhousematien.jpg?url";
+import image2 from "../../assets/image/menufuture/Homepage/inhousecollarmanuacture.jpg?url";
+import image3 from "../../assets/image/menufuture/Homepage/fabriccuttingtechnologies.jpg?url";
+import image4 from "../../assets/image/menufuture/Homepage/sewingllines.jpg?url";
+import image5 from "../../assets/image/menufuture/Homepage/finishing.jpg?url";
+import image6 from "../../assets/image/menufuture/Homepage/qualitycheck.jpg?url";
+import image7 from "../../assets/image/menufuture/Homepage/delivery.jpg?url";
 
 const WhyChoseUs = () => {
   const swiperRef = useRef(null);
@@ -76,8 +76,9 @@ const WhyChoseUs = () => {
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               At Yara Production, we control all key production stages in our
-              state-of-the-art facility in Istanbul Başakşehir. With ongoing
-              investments in sustainable technologies, we've:
+              state-of-the-art facility in Trav. Borrás, 9, 12300 Morella,
+              Castellón, Spain. With ongoing investments in sustainable
+              technologies, we've:
             </p>
             <div className="flex justify-center gap-12 mb-10">
               <div className="text-center">
