@@ -21,10 +21,10 @@ const AboutUsHome = () => {
             <br />
             Perfectly filling the gap in the production of high quality and
             exclusive boutique garments in the sector, Yara Production is the
-            leader in Spain in the production of niche and high quality knitwear
-            products by producing in-house cotton, silk, wool, linen, cashmere,
-            tencel, viscose and nylon knitted fabrics, starting from selecting
-            the yarn for the garment.
+            leader in Castellón, Spain in the production of niche and high
+            quality knitwear products by producing in-house cotton, silk, wool,
+            linen, cashmere, tencel, viscose and nylon knitted fabrics, starting
+            from selecting the yarn for the garment.
           </p>
 
           <button className="relative inline-flex items-center px-8 py-3 overflow-hidden text-lg font-medium text-primary border-2 border-primary hover:text-white group">

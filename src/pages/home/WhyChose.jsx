@@ -80,7 +80,7 @@ const WhyChose = () => {
           </h2>
           <p className="text-gray-700 text-sm font-lato leading-relaxed">
             YARA Production carries out all the key stages of production in its
-            integrated facility in Istanbul Turkey. Our company, which has
+            integrated facility in Castellón, Spain. Our company, which has
             increased its annual production capacity to 750,000 units by
             continuing its sustainable latest production technologies and
             investments since the day it was founded.
