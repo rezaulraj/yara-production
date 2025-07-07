@@ -1,6 +1,6 @@
 import React from "react";
-import herovideo from "../../assets/video/textile-video.mp4";
-
+// import herovideo from "../../assets/video/textile-video.mp4";
+import herovideo from "../../assets/image/menufuture/Homepage/promovideo.mp4";
 const HeroHome = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">

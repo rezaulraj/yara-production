@@ -1,11 +1,11 @@
 import React from "react";
-import garmant1 from "../../assets/image/home/gr1.png?url";
-import garmant2 from "../../assets/image/home/gr2.png?url";
-import garmant3 from "../../assets/image/home/gr3.png?url";
-import garmant4 from "../../assets/image/home/gr4.png?url";
-import garmant5 from "../../assets/image/home/gr5.png?url";
-import garmant6 from "../../assets/image/home/gr6.png?url";
-import garmant7 from "../../assets/image/home/gr7.png?url";
+import garmant1 from "../../assets/image/menufuture/Homepage/tshirt.jpg?url";
+import garmant2 from "../../assets/image/menufuture/Homepage/sweatshirtsweater.jpg?url";
+import garmant3 from "../../assets/image/menufuture/Homepage/tracksuit.jpg?url";
+import garmant4 from "../../assets/image/menufuture/Homepage/trouser.jpg?url";
+import garmant5 from "../../assets/image/menufuture/Homepage/collarshirt.jpg?url";
+import garmant6 from "../../assets/image/menufuture/Homepage/jacket.jpg?url";
+import garmant7 from "../../assets/image/menufuture/Homepage/coat.jpg?url";
 import { FaArrowRight } from "react-icons/fa6";
 
 const GarmantsHome = () => {
@@ -56,7 +56,6 @@ const GarmantsHome = () => {
 
   return (
     <section className="bg-amber-50" id="discover-out-collection">
-   
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="text-left mb-16">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px] mb-4">
@@ -67,21 +66,21 @@ const GarmantsHome = () => {
           </h2>
         </div>
 
-       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {garmantProducts.map((product, index) => (
             <div
               key={index}
               className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-500"
             >
-             
-              <img
-                src={product.image}
-                alt={product.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              <div className="relative">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/20"></div>
+              </div>
 
-            
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <div className="relative">
                   <a
@@ -91,10 +90,8 @@ const GarmantsHome = () => {
                     {product.title}
                   </a>
 
-                
                   <div className="w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full mb-3"></div>
 
-                 
                   <a
                     href={product.path}
                     className="flex items-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 text-white font-medium"

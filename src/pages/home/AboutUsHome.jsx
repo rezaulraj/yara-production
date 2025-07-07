@@ -1,6 +1,6 @@
 import React from "react";
-import about1 from "../../assets/image/home/about1.png?url";
-import about2 from "../../assets/image/home/about2.png?url";
+import about1 from "../../assets/image/menufuture/AboutUs/m1.jpg?url";
+import about2 from "../../assets/image/menufuture/AboutUs/factory.jpg?url";
 
 const AboutUsHome = () => {
   return (

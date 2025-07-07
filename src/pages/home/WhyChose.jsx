@@ -6,14 +6,14 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import logo from "/logo1.png?url";
-import machine from "../../assets/image/home/about1.png?url";
-import image1 from "../../assets/image/home/about3.jpg?url";
+import machine from "../../assets/image/menufuture/AboutUs/m1.jpg?url";
+import image1 from "../../assets/image/menufuture/Homepage/inhousematien.jpg?url";
 import image2 from "../../assets/image/home/about4.jpg?url";
-import image3 from "../../assets/image/home/about5.jpg?url";
-import image4 from "../../assets/image/home/about6.jpg?url";
-import image5 from "../../assets/image/home/about7.jpg?url";
-import image6 from "../../assets/image/home/about8.jpg?url";
-import image7 from "../../assets/image/home/about9.jpg?url";
+import image3 from "../../assets/image/menufuture/Homepage/fabriccuttingtechnologies.jpg?url";
+import image4 from "../../assets/image/menufuture/Homepage/sewingllines.jpg?url";
+import image5 from "../../assets/image/menufuture/Homepage/finishing.jpg?url";
+import image6 from "../../assets/image/menufuture/Homepage/qualitycheck.jpg?url";
+import image7 from "../../assets/image/menufuture/Homepage/delivery.jpg?url";
 
 const WhyChose = () => {
   const swiperRef = useRef(null);
@@ -138,8 +138,9 @@ const WhyChose = () => {
           <img
             src={machine}
             alt="Manufacturing facility"
-            className="w-full h-full object-cover rounded-xl shadow-2xl border-4 border-gray-900"
+            className="w-full h-full object-cover rounded-xl shadow-2xl border-4 border-secondary"
           />
+          <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
         </div>
       </div>
 
