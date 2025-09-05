@@ -12,6 +12,7 @@ import {
   FiAward,
   FiLayers,
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const FabricProduct = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -67,6 +68,72 @@ const FabricProduct = () => {
       id="fabric-development"
       className="max-w-screen-xl mx-auto my-20 px-6"
     >
+      <Helmet>
+        <title>Fabric Manufacturing | YARA Production</title>
+        <meta
+          name="description"
+          content="YARA Production offers in-house fabric manufacturing, producing high-quality fabrics with reduced lead times, cost efficiency, and unique collections."
+        />
+        <meta
+          name="keywords"
+          content="in-house fabric, fabric production, YARA Production, textile manufacturing, premium fabrics, custom fabrics"
+        />
+        <meta name="author" content="YARA Production" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="In-House Fabric Manufacturing | YARA Production"
+        />
+        <meta
+          property="og:description"
+          content="Explore YARA Production's in-house fabric manufacturing, delivering high-quality fabrics efficiently and with innovative designs."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/herosection-D9RYm2RP.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/fabric-production"
+        />
+        <meta property="og:site_name" content="YARA Production" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="In-House Fabric Manufacturing | YARA Production"
+        />
+        <meta
+          name="twitter:description"
+          content="YARA Production crafts premium fabrics in-house, reducing lead times, cutting costs, and delivering unique collections with precision."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/inhousematien-CKGDtlD4.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "In-House Fabric Manufacturing",
+              "image": "${fabricImage}",
+              "description": "YARA Production crafts high-quality fabrics in-house, reducing lead times, saving costs, and delivering unique collections with speed and precision.",
+              "brand": {
+                "@type": "Brand",
+                "name": "YARA Production"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/fabric-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   FiMapPin,
-  FiPhone,
   FiMail,
   FiSend,
   FiUser,
@@ -24,31 +24,117 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("subject", formData.subject);
+    form.append("phone", formData.phone);
+    form.append("message", formData.message);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/chairman@yaraproductions.uk",
+        {
+          method: "POST",
+          body: form,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success === "true") {
+        setShowSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          phone: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      setShowSuccess(true);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        phone: "",
-        message: "",
-      });
-    }, 1500);
+    }
   };
 
   return (
     <section id="get-in-touch" className="bg-gray-50 py-16 relative">
+      <Helmet>
+        <title>Contact Us | YARA Production</title>
+        <meta
+          name="description"
+          content="Get in touch with YARA Production for inquiries, partnerships, or support. Fill out our contact form or reach us via email or visit our location in Spain."
+        />
+        <meta
+          name="keywords"
+          content="YARA Production contact, textile inquiries, fabric inquiries, business contact, Spain office"
+        />
+        <meta name="author" content="YARA Production" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Us | YARA Production" />
+        <meta
+          property="og:description"
+          content="Reach out to YARA Production via our contact form, email, or visit our office in Morella, Spain. We're here to answer all your inquiries."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+        <meta property="og:url" content="https://yaraproductions.uk/contact" />
+        <meta property="og:site_name" content="YARA Production" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | YARA Production" />
+        <meta
+          name="twitter:description"
+          content="Connect with YARA Production for inquiries or partnerships through our contact form, email, or by visiting our office in Spain."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/logo3.png"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "YARA Production",
+              "url": "https://yaraproductions.uk",
+              "logo": "https://yaraproductions.uk/logo3.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "email": "chairman@yaraproductions.uk",
+                "areaServed": "Worldwide"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Trav. Borrás, 9",
+                "addressLocality": "Morella",
+                "postalCode": "12300",
+                "addressRegion": "Castellón",
+                "addressCountry": "Spain"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+
       {showSuccess && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative">
@@ -58,7 +144,6 @@ const ContactForm = () => {
             >
               <FiX className="text-xl" />
             </button>
-
             <div className="text-center py-6">
               <FiCheckCircle className="text-green-500 text-5xl mx-auto mb-4" />
               <h3 className="text-2xl font-serif font-normal text-gray-800 mb-2">
@@ -95,7 +180,6 @@ const ContactForm = () => {
                 <FiMapPin className="text-amber-600 mr-2" />
                 Our Location
               </h3>
-
               <div className="space-y-6">
                 <div className="flex items-start">
                   <FiMapPin className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
@@ -106,22 +190,18 @@ const ContactForm = () => {
                     </p>
                   </div>
                 </div>
-
-                {/* <div className="flex items-start">
-                  <FiPhone className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
+                <div className="flex items-start">
+                  <FiMail className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+90 212 675 24 98</p>
+                    <h4 className="font-medium text-gray-800">Email</h4>
+                    <a
+                      href="mailto:chairman@yaraproductions.uk"
+                      className="text-gray-600"
+                    >
+                      chairman@yaraproductions.uk
+                    </a>
                   </div>
-                </div> */}
-
-                {/* <div className="flex items-start">
-                  <FiPhone className="text-amber-600 mt-1 mr-4 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium text-gray-800">Fax</h4>
-                    <p className="text-gray-600">+90 212 675 24 99</p>
-                  </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -158,8 +238,8 @@ const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   placeholder="Your full name"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -174,8 +254,8 @@ const ContactForm = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   placeholder="your.email@example.com"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -187,8 +267,8 @@ const ContactForm = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   placeholder="Subject of your message"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -200,8 +280,8 @@ const ContactForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   placeholder="+90 212 123 4567"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -216,8 +296,8 @@ const ContactForm = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   placeholder="Your message here..."
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   required
                 ></textarea>
               </div>

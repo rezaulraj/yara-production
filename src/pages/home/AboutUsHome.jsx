@@ -1,10 +1,70 @@
 import React from "react";
 import about1 from "../../assets/image/menufuture/AboutUs/m1.jpg?url";
 import about2 from "../../assets/image/menufuture/AboutUs/factory.jpg?url";
+import { Helmet } from "react-helmet";
 
 const AboutUsHome = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <meta
+          name="description"
+          content="With 24+ years of textile production expertise, Yara Productions manufactures premium high-quality garments for global fashion brands. Located in Castellón, Spain, we specialize in knitwear using cotton, silk, wool, cashmere, linen, and more."
+        />
+        <meta
+          name="keywords"
+          content="Yara Productions, garment manufacturer Spain, premium clothing, private label fashion, knitwear production, luxury apparel manufacturer"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/about-yara"
+        />
+        <meta
+          property="og:title"
+          content="About Yara Productions | Premium Garments Manufacturer"
+        />
+        <meta
+          property="og:description"
+          content="Discover Yara Productions: 24+ years of experience in luxury garment manufacturing for international brands."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Yara Productions",
+            "url": "https://yaraproductions.uk",
+            "logo": "https://yaraproductions.uk/logo3.png",
+            "description": "Premium garment manufacturer in Spain with 24+ years of expertise in producing exclusive knitwear and luxury apparel.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Castellón",
+              "addressCountry": "Spain"
+            },
+            "sameAs": [
+              "https://www.facebook.com/yaraproductions0/",
+              "https://www.instagram.com/yaraproductions0/",
+              "https://www.youtube.com/@YaraProductions",
+              "https://www.tiktok.com/@yaraproductions0",
+              "https://www.linkedin.com/company/107771948/",
+              "https://x.com/yaraproduction0",
+              "https://www.pinterest.com/yaraproductions/"
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
@@ -29,9 +89,7 @@ const AboutUsHome = () => {
 
           <button
             onClick={() => {
-              const section = document.querySelector(
-                "#why-chose"
-              );
+              const section = document.querySelector("#why-chose");
               section?.scrollIntoView({ behavior: "smooth" });
             }}
             className="relative inline-flex items-center px-8 py-3 overflow-hidden text-lg font-medium text-primary border-2 border-primary hover:text-white group"

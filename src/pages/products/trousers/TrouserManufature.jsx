@@ -9,6 +9,7 @@ import {
   FiCheckCircle,
   FiTarget,
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const TrouserManufacture = () => {
   const highlights = [
@@ -31,6 +32,72 @@ const TrouserManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>Trousers Production | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions UK delivers high-quality private label knit trousers with innovative designs, comfort, and style for global brands."
+        />
+        <meta
+          name="keywords"
+          content="Knit trousers production, private label trousers, Yara Productions UK, fashion trousers, custom trousers"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Premium Knit Trousers Production | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="High-quality private label knit trousers by Yara Productions UK combining style, comfort, and design innovation."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/trouser5-BWx-t0FD.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/trousers-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Premium Knit Trousers Production | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="High-quality private label knit trousers by Yara Productions UK with style, comfort, and innovation."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/trouser5-BWx-t0FD.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Premium Knit Trousers",
+              "image": "${trouserImage}",
+              "description": "Yara Productions UK provides high-quality private label knit trousers, combining style, comfort, and innovative design for local and international brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/trousers-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

@@ -37,7 +37,7 @@ const JacketQuility = () => {
   return (
     <section id="jacket-products" className="bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-6 py-20">
-        {/* Text Content */}
+        
         <div className="space-y-4 mb-6">
           <h4 className="text-primary font-serif text-lg tracking-widest">
             Premium Quality
@@ -47,7 +47,7 @@ const JacketQuility = () => {
           </h2>
         </div>
 
-        {/* Image Gallery */}
+      
         <div className="grid grid-cols-3 gap-4">
           {jacketImages.map((image, index) => (
             <div

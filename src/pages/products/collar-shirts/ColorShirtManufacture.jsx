@@ -10,6 +10,7 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 import { PiShirtFoldedFill } from "react-icons/pi";
+import { Helmet } from "react-helmet";
 
 const CollarShirtManufacture = () => {
   const productionDetails = [
@@ -37,6 +38,72 @@ const CollarShirtManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>Collar Shirt Production | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions specializes in private label knit collar shirt production for men's fashion. High-quality, custom-made shirts for local and international brands."
+        />
+        <meta
+          name="keywords"
+          content="knit collar shirt production, private label shirts, Yara Productions, custom men's shirts, UK garment manufacturer"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Private Label Knit Collar Shirt Production | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="High-quality, private label knit collar shirts for local and international brands. Yara Productions UK."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/collarshirt-D5Le7gzl.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/collar-shirts-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Private Label Knit Collar Shirt Production | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="High-quality, private label knit collar shirts for local and international brands. Yara Productions UK."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/collarshirt-D5Le7gzl.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Private Label Knit Collar Shirt",
+              "image": "${collarImage}",
+              "description": "Yara Productions specializes in private label knit collar shirt production for men's fashion. High-quality, custom-made shirts for local and international brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/collar-shirts-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

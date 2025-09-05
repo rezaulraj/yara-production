@@ -9,6 +9,7 @@ import {
   FiShield,
   FiTrendingUp,
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const TshirtManufacture = () => {
   const highlights = [
@@ -41,6 +42,71 @@ const TshirtManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>T-Shirt Production | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions UK delivers premium private label T-shirt production, from yarn to finished knitwear, ensuring exceptional quality and speed for global brands."
+        />
+        <meta
+          name="keywords"
+          content="T-shirt production, knitwear manufacturer, private label T-shirts, Yara Productions, UK garments, custom T-shirts"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Premium T-Shirt Production | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="High-quality private label T-shirt production by Yara Productions UK, delivering exceptional knitwear with speed, quality, and flexibility."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/ts3-5VFSujSV.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/t-shirt-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Premium T-Shirt Production | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="High-quality private label T-shirt production by Yara Productions UK, from yarn to finished knitwear."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/ts3-5VFSujSV.jpg"
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Premium Knit T-Shirts",
+              "image": "${tshirtmanu}",
+              "description": "Yara Productions UK provides premium private label T-shirt production, delivering high-quality knitwear from yarn to finished products for local and international brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/t-shirt-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

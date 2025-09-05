@@ -1,9 +1,77 @@
 import React from "react";
 // import herovideo from "../../assets/video/textile-video.mp4";
 import herovideo from "../../assets/image/menufuture/Homepage/promovideo.mp4";
+import { Helmet } from "react-helmet";
 const HeroHome = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      <Helmet>
+        <title>
+          Yara Productions | Premium Quality Garments Manufacturer UK
+        </title>
+        <meta
+          name="description"
+          content="Yara Productions UK – Dedicated to producing premium quality garments with precision, sustainability, and craftsmanship. Explore our exclusive clothing collections."
+        />
+        <meta
+          name="keywords"
+          content="Yara Productions, garments manufacturer UK, fashion production, premium clothing, textile production, sustainable garments"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yaraproductions.uk/" />
+        <meta
+          property="og:title"
+          content="Yara Productions | Premium Quality Garments Manufacturer UK"
+        />
+        <meta
+          property="og:description"
+          content="Explore Yara Productions – where dedication meets premium quality garment production in the UK."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://yaraproductions.uk/" />
+        <meta
+          name="twitter:title"
+          content="Yara Productions | Premium Quality Garments Manufacturer UK"
+        />
+        <meta
+          name="twitter:description"
+          content="Premium garment manufacturing in the UK. Explore Yara Productions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+
+        <link rel="canonical" href="https://yaraproductions.uk/" />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Yara Productions",
+            "url": "https://yaraproductions.uk/",
+            "logo": "https://yaraproductions.uk/logo3.png",
+            "sameAs": [
+              "https://www.facebook.com/yaraproductions0/",
+              "https://www.instagram.com/yaraproductions0/",
+              "https://www.youtube.com/@YaraProductions",
+              "https://www.tiktok.com/@yaraproductions0",
+              "https://www.linkedin.com/company/107771948/",
+              "https://x.com/yaraproduction0",
+              "https://www.pinterest.com/yaraproductions/"
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
       <div className="absolute inset-0 z-0">
         <video
           autoPlay

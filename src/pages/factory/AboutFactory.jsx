@@ -4,6 +4,7 @@ import factimage from "../../assets/image/menufuture/Factory/factory.jpg?url";
 import facti1 from "../../assets/image/menufuture/Factory/m1.jpg?url";
 import facti2 from "../../assets/image/menufuture/Factory/m2.jpg?url";
 import facti3 from "../../assets/image/menufuture/Factory/m3.jpg?url";
+import { Helmet } from "react-helmet";
 const AboutFactory = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,6 +32,70 @@ const AboutFactory = () => {
   };
   return (
     <section id="view-our-work" className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>About Our Factory | YARA Production</title>
+        <meta
+          name="description"
+          content="Discover YARA Production's state-of-the-art textile factory, leveraging 24 years of expertise to deliver high-quality garments for global brands."
+        />
+        <meta
+          name="keywords"
+          content="YARA Production factory, textile production, garment manufacturing, quality control, sustainable textile production"
+        />
+        <meta name="author" content="YARA Production" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="About Our Factory | YARA Production"
+        />
+        <meta
+          property="og:description"
+          content="Explore YARA Production's factory and learn about our controlled production process, quality assurance, and innovation in textile manufacturing."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+        <meta property="og:url" content="https://yaraproductions.uk/factory" />
+        <meta property="og:site_name" content="YARA Production" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Our Factory | YARA Production"
+        />
+        <meta
+          name="twitter:description"
+          content="Learn how YARA Production leverages advanced textile manufacturing techniques, quality control, and sustainable practices."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/factory-C7xFOlcj.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "YARA Production",
+              "url": "https://yaraproductions.uk",
+              "logo": "https://yaraproductions.uk/logo3.png",
+              "sameAs": [
+                "https://www.facebook.com/yaraproductions0/",
+                "https://www.linkedin.com/company/107771948/admin/dashboard/",
+              ],
+              "department": {
+                "@type": "Organization",
+                "name": "Textile Factory",
+                "description": "State-of-the-art factory producing high-quality garments for local and international brands, focusing on quality, innovation, and sustainable practices.",
+                "image": "${factimage}"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

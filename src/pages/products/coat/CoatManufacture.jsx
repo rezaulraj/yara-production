@@ -9,6 +9,7 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 import { FaBlackTie } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const CoatManufacture = () => {
   const productionDetails = [
@@ -36,6 +37,72 @@ const CoatManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>Coat Manufacturing | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions offers premium private label coat manufacturing services for men's fashion. High-quality, custom-made designer coats for international brands."
+        />
+        <meta
+          name="keywords"
+          content="coat manufacturing, private label coats, Yara Productions, men's coats, custom coat production, UK garment manufacturer"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Private Label Coat Manufacturing | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="High-quality, custom-made designer men's coats for private label brands. Yara Productions UK."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/coat-saZXyh2I.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/coat-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Private Label Coat Manufacturing | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="High-quality, custom-made designer men's coats for private label brands. Yara Productions UK."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/coat-saZXyh2I.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Coat Manufacturing",
+              "image": "${coatImage}",
+              "description": "Yara Productions offers premium private label coat manufacturing services for men's fashion. High-quality, custom-made designer coats for international brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/coat-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">

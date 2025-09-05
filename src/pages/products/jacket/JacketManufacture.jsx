@@ -10,6 +10,7 @@ import {
   FiCheckCircle,
   FiZap,
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const JacketManufacture = () => {
   const productionDetails = [
@@ -37,8 +38,73 @@ const JacketManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>Jacket Production | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions UK offers premium private label men's knitted jacket production. High-quality fabrics and trendsetting designs for global fashion brands."
+        />
+        <meta
+          name="keywords"
+          content="men's knitted jackets, jacket manufacturing, private label jackets, Yara Productions, UK garment manufacturer, custom jackets"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Men's Knitted Jacket Production | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="Premium private label men's knitted jackets with superior fabrics and trendsetting designs from Yara Productions UK."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/jacket-Dk21JZ1Q.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/jacket-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Men's Knitted Jacket Production | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="Premium private label men's knitted jackets with superior fabrics and trendsetting designs from Yara Productions UK."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/jacket-Dk21JZ1Q.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Men's Knitted Jackets",
+              "image": "${jacketImage}",
+              "description": "Yara Productions UK offers premium private label men's knitted jacket production. High-quality fabrics and trendsetting designs for global fashion brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/jacket-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div className="space-y-8">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
             Private Label
@@ -47,7 +113,6 @@ const JacketManufacture = () => {
             Men's Knitted Jackets Expertise
           </h2>
 
-          {/* Expertise Section */}
           <div className="flex items-start space-x-4 bg-amber-50 p-6 rounded-lg">
             <FiZap className="text-3xl text-amber-600 mt-1 flex-shrink-0" />
             <div>
@@ -60,7 +125,6 @@ const JacketManufacture = () => {
             </div>
           </div>
 
-          {/* Quality Focus Section */}
           <div className="pt-4 bg-gray-50 p-6 rounded-lg border border-gray-100">
             <h3 className="text-xl font-serif font-normal text-gray-800 mb-4 flex items-center">
               <FiCheckCircle className="text-amber-600 mr-3" />
@@ -74,7 +138,6 @@ const JacketManufacture = () => {
             </p>
           </div>
 
-          {/* Production Details */}
           <div className="pt-4">
             <h3 className="text-2xl font-serif font-normal text-gray-800 mb-6 flex items-center">
               <FiTrendingUp className="text-amber-600 mr-3" />
@@ -95,7 +158,6 @@ const JacketManufacture = () => {
           </div>
         </div>
 
-        {/* Image */}
         <div className="relative h-full min-h-[500px] rounded-lg overflow-hidden shadow-xl">
           <img
             src={jacketImage}

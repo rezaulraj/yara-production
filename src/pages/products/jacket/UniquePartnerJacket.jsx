@@ -32,7 +32,6 @@ const UniquePartnerJa = () => {
     <section className="bg-amber-50">
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
           <div className="space-y-8">
             <h4 className="text-primary font-serif text-lg tracking-widest uppercase leading-tight">
               Distinctive
@@ -80,7 +79,6 @@ const UniquePartnerJa = () => {
             </p>
           </div>
 
-          {/* Image Gallery */}
           <div className="grid grid-cols-2 gap-4">
             {partnerImages.map((image, index) => (
               <div
@@ -101,7 +99,6 @@ const UniquePartnerJa = () => {
           </div>
         </div>
 
-        {/* Image Popup Gallery */}
         {isGalleryOpen && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <button

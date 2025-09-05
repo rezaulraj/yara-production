@@ -176,18 +176,20 @@ const Footer = () => {
                 </p>
               </motion.div>
 
-              <motion.a
-                href="/contact"
+              <motion.div
                 className="flex items-center group"
                 whileHover={{ x: 5 }}
               >
                 <div className="bg-amber-500/10 p-2 rounded-lg mr-3 group-hover:bg-amber-500/20 transition-colors">
-                  <LuContact className="text-amber-400" />
+                  <FaEnvelope className="text-amber-400" />
                 </div>
-                <span className="text-gray-400 group-hover:text-amber-400 transition-colors">
-                  Contact Us Today
-                </span>
-              </motion.a>
+                <a
+                  href="mailto:chairman@yaraproductions.uk"
+                  className="text-gray-400 group-hover:text-amber-400 transition-colors"
+                >
+                  chairman@yaraproductions.uk
+                </a>
+              </motion.div>
             </div>
           </motion.div>
         </div>

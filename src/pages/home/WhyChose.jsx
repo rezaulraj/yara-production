@@ -14,6 +14,7 @@ import image4 from "../../assets/image/menufuture/Homepage/sewingllines.jpg?url"
 import image5 from "../../assets/image/menufuture/Homepage/finishing.jpg?url";
 import image6 from "../../assets/image/menufuture/Homepage/qualitycheck.jpg?url";
 import image7 from "../../assets/image/menufuture/Homepage/delivery.jpg?url";
+import { Helmet } from "react-helmet";
 
 const WhyChose = () => {
   const swiperRef = useRef(null);
@@ -57,6 +58,23 @@ const WhyChose = () => {
 
   return (
     <div id="why-chose" className="max-w-screen-xl mx-auto px-6 py-20 relative">
+      <Helmet>
+        <meta
+          name="description"
+          content="Yara Production specializes in in-house fabric and collar manufacturing, sustainable production, fast delivery, and world-class quality control."
+        />
+        <meta
+          name="keywords"
+          content="Yara Production, Fabric Manufacturing, Collar Manufacturing, Sewing Lines, Quality Control, Fast Delivery, Textile Factory Spain"
+        />
+        <meta property="og:title" content="Why Choose Yara Production?" />
+        <meta
+          property="og:description"
+          content="Discover why global brands trust Yara Production: in-house fabric & collar manufacturing, advanced sewing lines, and world-class quality control."
+        />
+        <meta property="og:image" content={machine} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
         <div
           className="absolute inset-0 bg-repeat"

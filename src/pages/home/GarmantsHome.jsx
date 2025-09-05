@@ -7,6 +7,7 @@ import garmant5 from "../../assets/image/menufuture/Homepage/collarshirt.jpg?url
 import garmant6 from "../../assets/image/menufuture/Homepage/jacket.jpg?url";
 import garmant7 from "../../assets/image/menufuture/Homepage/coat.jpg?url";
 import { FaArrowRight } from "react-icons/fa6";
+import { Helmet } from "react-helmet";
 
 const GarmantsHome = () => {
   const garmantProducts = [
@@ -56,6 +57,47 @@ const GarmantsHome = () => {
 
   return (
     <section className="bg-amber-50" id="discover-out-collection">
+      <Helmet>
+       
+        <meta
+          name="description"
+          content="Discover the premium garments manufactured by Yara Productions – T-shirts, sweatshirts, tracksuits, trousers, collar shirts, jackets, and coats. High-quality production with 24+ years of experience."
+        />
+        <meta
+          name="keywords"
+          content="garment production, t-shirt manufacturer, sweatshirt supplier, tracksuit production, trousers manufacturing, jacket production, coat manufacturer, Yara Productions"
+        />
+
+       
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Garments We Specialize In",
+            "itemListElement": [
+              ${garmantProducts
+                .map(
+                  (p, i) => `
+              {
+                "@type": "Product",
+                "position": ${i + 1},
+                "name": "${p.title}",
+                "image": "https://yaraproductions.uk${p.image}",
+                "description": "${p.description}",
+                "url": "https://yaraproductions.uk${p.path}",
+                "brand": {
+                  "@type": "Organization",
+                  "name": "Yara Productions"
+                }
+              }`
+                )
+                .join(",")}
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="text-left mb-16">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px] mb-4">

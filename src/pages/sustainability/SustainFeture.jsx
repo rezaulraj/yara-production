@@ -10,6 +10,7 @@ import {
   FiSun,
 } from "react-icons/fi";
 import { FaLeaf } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const SustainFeature = () => {
   const sustainabilityFeatures = [
@@ -41,6 +42,70 @@ const SustainFeature = () => {
       id="our-green-initiatives"
       className="max-w-screen-xl mx-auto my-20 px-6"
     >
+      <Helmet>
+        <title>Sustainable Manufacturing Practices | YARA Production</title>
+        <meta
+          name="description"
+          content="YARA Production is committed to sustainable manufacturing, using eco-friendly materials, efficient technology, and ethical partnerships to create a greener future."
+        />
+        <meta
+          name="keywords"
+          content="Sustainability, eco-friendly manufacturing, responsible production, green initiatives, YARA Production"
+        />
+        <meta name="author" content="YARA Production" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Sustainable Manufacturing Practices | YARA Production"
+        />
+        <meta
+          property="og:description"
+          content="Explore YARA Production's commitment to sustainable manufacturing, eco-friendly materials, and responsible production practices."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/heorsection-BzceB2tR.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/sustainability"
+        />
+        <meta property="og:site_name" content="YARA Production" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Sustainable Manufacturing Practices | YARA Production"
+        />
+        <meta
+          name="twitter:description"
+          content="YARA Production leverages sustainable production techniques, ethical partnerships, and eco-friendly materials to minimize environmental impact."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/forabrighterfuture-DREz8IDR.jpg"
+        />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "YARA Production",
+              "url": "https://yaraproductions.uk",
+              "logo": "https://yaraproductions.uk/logo3.png",
+              "sameAs": [
+                "https://www.facebook.com/yaraproductions0/",
+                "https://www.youtube.com/@YaraProductions",
+                "https://www.instagram.com/yaraproductions0/",
+                "https://www.linkedin.com/company/107771948/admin/dashboard/"
+              ],
+              "description": "YARA Production is committed to sustainable manufacturing, using eco-friendly materials, ethical partnerships, and advanced technology to reduce environmental impact."
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <div className="flex items-center space-x-3">

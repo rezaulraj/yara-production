@@ -10,6 +10,7 @@ import {
   FiTruck,
   FiCheckCircle,
 } from "react-icons/fi";
+import { Helmet } from "react-helmet";
 
 const TracksuitManufacture = () => {
   const highlights = [
@@ -37,6 +38,73 @@ const TracksuitManufacture = () => {
 
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
+      <Helmet>
+        <title>Tracksuit Production | Yara Productions UK</title>
+        <meta
+          name="description"
+          content="Yara Productions UK delivers high-quality private label knit tracksuits with innovative designs, exceptional comfort, and specialty fabrics for global brands."
+        />
+        <meta
+          name="keywords"
+          content="Tracksuit production, knit tracksuits, private label tracksuits, Yara Productions, UK garments, custom tracksuits"
+        />
+        <meta name="author" content="Yara Productions" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Premium Tracksuit Production | Yara Productions UK"
+        />
+        <meta
+          property="og:description"
+          content="High-quality private label knit tracksuits by Yara Productions UK, delivering exceptional comfort and innovative designs."
+        />
+        <meta
+          property="og:image"
+          content="https://yaraproductions.uk/assets/ts3-B4m0JFMt.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://yaraproductions.uk/tracksuit-production"
+        />
+        <meta property="og:site_name" content="Yara Productions" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Premium Tracksuit Production | Yara Productions UK"
+        />
+        <meta
+          name="twitter:description"
+          content="High-quality private label knit tracksuits by Yara Productions UK with innovative designs and exceptional comfort."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yaraproductions.uk/assets/ts3-B4m0JFMt.jpg"
+        />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Premium Knit Tracksuits",
+              "image": "${tracksuitImage}",
+              "description": "Yara Productions UK provides high-quality private label knit tracksuits, combining innovative design, exceptional comfort, and specialty fabrics for local and international brands.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Yara Productions"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://yaraproductions.uk/tracksuit-production",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <div className="space-y-8">
