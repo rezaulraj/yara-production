@@ -33,7 +33,7 @@ const TrouserManufacture = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
       <Helmet>
-        <title>Trousers Production | Yara Productions UK</title>
+        <title>Trousers Production</title>
         <meta
           name="description"
           content="Yara Productions UK delivers high-quality private label knit trousers with innovative designs, comfort, and style for global brands."
@@ -47,7 +47,7 @@ const TrouserManufacture = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Premium Knit Trousers Production | Yara Productions UK"
+          content="Premium Knit Trousers Production"
         />
         <meta
           property="og:description"

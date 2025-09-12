@@ -39,7 +39,7 @@ const CollarShirtManufacture = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
       <Helmet>
-        <title>Collar Shirt Production | Yara Productions UK</title>
+        <title>Collar Shirt Production</title>
         <meta
           name="description"
           content="Yara Productions specializes in private label knit collar shirt production for men's fashion. High-quality, custom-made shirts for local and international brands."
@@ -53,7 +53,7 @@ const CollarShirtManufacture = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Private Label Knit Collar Shirt Production | Yara Productions UK"
+          content="Collar Shirt Production"
         />
         <meta
           property="og:description"

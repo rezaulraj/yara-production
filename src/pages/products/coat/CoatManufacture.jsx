@@ -38,7 +38,7 @@ const CoatManufacture = () => {
   return (
     <section className="max-w-screen-xl mx-auto my-20 px-6">
       <Helmet>
-        <title>Coat Manufacturing | Yara Productions UK</title>
+        <title>Coat Manufacturing</title>
         <meta
           name="description"
           content="Yara Productions offers premium private label coat manufacturing services for men's fashion. High-quality, custom-made designer coats for international brands."
@@ -50,10 +50,7 @@ const CoatManufacture = () => {
         <meta name="author" content="Yara Productions" />
 
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Private Label Coat Manufacturing | Yara Productions UK"
-        />
+        <meta property="og:title" content="Coat Manufacturing" />
         <meta
           property="og:description"
           content="High-quality, custom-made designer men's coats for private label brands. Yara Productions UK."

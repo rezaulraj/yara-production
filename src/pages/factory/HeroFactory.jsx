@@ -1,8 +1,10 @@
 import React from "react";
 import heroFactory from "../../assets/image/menufuture/Factory/herosection.jpg?url";
+
 const HeroFactory = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      
       <div className="absolute inset-0 w-full h-full">
         <img
           src={heroFactory}

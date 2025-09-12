@@ -38,7 +38,6 @@ const SweatshirtQuality = () => {
   return (
     <section id="sweatshit-products" className="bg-gray-50">
       <div className="max-w-screen-xl mx-auto px-6 py-20">
-        {/* Text Content */}
         <div className="space-y-4 mb-6">
           <h4 className="text-primary font-serif text-lg tracking-widest">
             Premium Quality
@@ -48,7 +47,6 @@ const SweatshirtQuality = () => {
           </h2>
         </div>
 
-        {/* Image Gallery */}
         <div className="grid grid-cols-3 gap-4">
           {swwatshirtImages.map((image, index) => (
             <div
@@ -61,15 +59,12 @@ const SweatshirtQuality = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              
-              </div>
+              <div className="absolute inset-0 bg-black/30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"></div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Image Popup Gallery */}
       {isGalleryOpen && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <button

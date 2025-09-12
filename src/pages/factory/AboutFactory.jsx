@@ -33,7 +33,7 @@ const AboutFactory = () => {
   return (
     <section id="view-our-work" className="max-w-screen-xl mx-auto my-20 px-6">
       <Helmet>
-        <title>About Our Factory | YARA Production</title>
+        <title>Our Factory | YARA Production</title>
         <meta
           name="description"
           content="Discover YARA Production's state-of-the-art textile factory, leveraging 24 years of expertise to deliver high-quality garments for global brands."
@@ -47,7 +47,7 @@ const AboutFactory = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="About Our Factory | YARA Production"
+          content="Our Factory | YARA Production"
         />
         <meta
           property="og:description"
@@ -63,7 +63,7 @@ const AboutFactory = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="About Our Factory | YARA Production"
+          content="Our Factory | YARA Production"
         />
         <meta
           name="twitter:description"

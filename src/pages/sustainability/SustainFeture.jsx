@@ -43,7 +43,7 @@ const SustainFeature = () => {
       className="max-w-screen-xl mx-auto my-20 px-6"
     >
       <Helmet>
-        <title>Sustainable Manufacturing Practices | YARA Production</title>
+        <title>Sustainable Manufacturing Practices</title>
         <meta
           name="description"
           content="YARA Production is committed to sustainable manufacturing, using eco-friendly materials, efficient technology, and ethical partnerships to create a greener future."
@@ -57,7 +57,7 @@ const SustainFeature = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Sustainable Manufacturing Practices | YARA Production"
+          content="Sustainable Manufacturing Practices"
         />
         <meta
           property="og:description"

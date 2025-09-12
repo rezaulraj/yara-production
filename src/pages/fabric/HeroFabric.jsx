@@ -1,9 +1,11 @@
 import React from "react";
 import fabrick from "../../assets/image/menufuture/OurFabric/herosection.jpg?url";
 import { FiArrowRight } from "react-icons/fi";
+
 const HeroFabric = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
+      
       <div className="absolute inset-0 w-full h-full">
         <img
           src={fabrick}
