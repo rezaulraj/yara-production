@@ -6,9 +6,7 @@ const HeroHome = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Helmet>
-        <title>
-          Yara Productions | Premium Quality Garments Manufacturer UK
-        </title>
+        <title>Yara Productions</title>
         <meta
           name="description"
           content="Yara Productions UK – Dedicated to producing premium quality garments with precision, sustainability, and craftsmanship. Explore our exclusive clothing collections."
@@ -21,10 +19,7 @@ const HeroHome = () => {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yaraproductions.uk/" />
-        <meta
-          property="og:title"
-          content="Yara Productions | Premium Quality Garments Manufacturer UK"
-        />
+        <meta property="og:title" content="Yara Productions" />
         <meta
           property="og:description"
           content="Explore Yara Productions – where dedication meets premium quality garment production in the UK."

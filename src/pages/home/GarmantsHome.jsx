@@ -58,7 +58,6 @@ const GarmantsHome = () => {
   return (
     <section className="bg-amber-50" id="discover-out-collection">
       <Helmet>
-       
         <meta
           name="description"
           content="Discover the premium garments manufactured by Yara Productions – T-shirts, sweatshirts, tracksuits, trousers, collar shirts, jackets, and coats. High-quality production with 24+ years of experience."
@@ -68,7 +67,6 @@ const GarmantsHome = () => {
           content="garment production, t-shirt manufacturer, sweatshirt supplier, tracksuit production, trousers manufacturing, jacket production, coat manufacturer, Yara Productions"
         />
 
-       
         <script type="application/ld+json">
           {`
           {
@@ -101,10 +99,10 @@ const GarmantsHome = () => {
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="text-left mb-16">
           <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px] mb-4">
-            HIGH-END QUALITY
+            Top-Tier Quality
           </h4>
-          <h2 className="font-serif text-4xl md:text-5xl font-normal text-gray-700 leading-tight">
-            Garments We Specialize In
+          <h2 className="font-serif text-4xl md:text-5xl font-normal text-gray-700 leading-tight max-w-4xl">
+            Our Signature Garments: Crafted with Precision & Luxury
           </h2>
         </div>
 

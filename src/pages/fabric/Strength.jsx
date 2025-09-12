@@ -69,11 +69,11 @@ const Strength = () => {
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h4 className="text-primary font-serif text-lg tracking-widest">
-              OUR STRENGTH
+            <h4 className="text-primary font-serif text-lg tracking-widest uppercase">
+              Our Expertise
             </h4>
             <h2 className="text-4xl font-serif font-medium text-gray-800 leading-tight">
-              Transforming High-Quality Yarns to Fabric
+              From Superior Yarns to Premium Fabrics
             </h2>
             <p className="text-gray-600 leading-relaxed">
               At YARA PRODUCTION, our fabric production facility has evolved

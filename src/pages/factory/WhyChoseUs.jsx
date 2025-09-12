@@ -71,7 +71,7 @@ const WhyChoseUs = () => {
             Why Choose Us?
           </h2>
           <h3 className="text-3xl font-serif text-primary mb-8 tracking-wide">
-            Immense Integrated Manufacturing
+            Full-Spectrum Manufacturing Solutions
           </h3>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

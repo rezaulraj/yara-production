@@ -21,38 +21,52 @@ const WhyChose = () => {
   const imageTestmonials = [
     {
       image: image1,
-      category: "FABRIC",
+      category: "PREMIUM FABRICS",
       title: "In-House Fabric Manufacturing",
+      description:
+        "We create luxury textiles with complete quality control from fiber to finished fabric.",
     },
     {
       image: image2,
-      category: "COLLAR",
+      category: "EXPERT CRAFTSMANSHIP",
       title: "In-House Collar Manufacturing",
+      description:
+        "Precision engineering for perfect collars that maintain their shape wear after wear.",
     },
     {
       image: image3,
-      category: "HIGH TECH",
-      title: "Fabric Cutting Technologies",
+      category: "PRECISION CUTTING",
+      title: "Advanced Cutting Technologies",
+      description:
+        "State-of-the-art equipment ensures perfect pattern matching and minimal waste.",
     },
     {
       image: image4,
-      category: "SEWING",
-      title: "Sewing Lines",
+      category: "EXPERT SEWING",
+      title: "Specialized Sewing Lines",
+      description:
+        "Skilled artisans and advanced machinery create flawless stitching every time.",
     },
     {
       image: image5,
-      category: "Ironing",
-      title: "Finishing",
+      category: "PERFECT FINISHING",
+      title: "Quality Finishing Process",
+      description:
+        "Every garment receives meticulous attention for a impeccable final appearance.",
     },
     {
       image: image6,
-      category: "Quality",
-      title: "Quality Control",
+      category: "QUALITY ASSURANCE",
+      title: "Rigorous Quality Control",
+      description:
+        "Multiple checkpoints ensure only perfect products reach our clients.",
     },
     {
       image: image7,
-      category: "Final",
-      title: "Delivery",
+      category: "TIMELY DELIVERY",
+      title: "Efficient Logistics",
+      description:
+        "Our integrated process means your products arrive on time, every time.",
     },
   ];
 
@@ -61,16 +75,19 @@ const WhyChose = () => {
       <Helmet>
         <meta
           name="description"
-          content="Yara Production specializes in in-house fabric and collar manufacturing, sustainable production, fast delivery, and world-class quality control."
+          content="Discover why global brands choose Yara Production: premium in-house manufacturing, sustainable practices, rapid delivery, and exceptional quality for luxury textiles."
         />
         <meta
           name="keywords"
-          content="Yara Production, Fabric Manufacturing, Collar Manufacturing, Sewing Lines, Quality Control, Fast Delivery, Textile Factory Spain"
+          content="Yara Production, premium manufacturing, sustainable production, fast delivery, quality control, textile innovation Spain"
         />
-        <meta property="og:title" content="Why Choose Yara Production?" />
+        <meta
+          property="og:title"
+          content="Why Leading Brands Choose Yara Production"
+        />
         <meta
           property="og:description"
-          content="Discover why global brands trust Yara Production: in-house fabric & collar manufacturing, advanced sewing lines, and world-class quality control."
+          content="Experience excellence in textile manufacturing with Yara Production's integrated facility, innovative technology, and commitment to quality."
         />
         <meta property="og:image" content={machine} />
         <meta property="og:type" content="website" />
@@ -90,18 +107,21 @@ const WhyChose = () => {
           <div className="flex items-center gap-4 mb-6">
             <img src={logo} alt="Yara Production" className="h-16" />
             <h4 className="text-lg font-serif font-medium text-gray-500 uppercase tracking-widest">
-              WHY CHOOSE Yara Production?
+              WHY CHOOSE YARA PRODUCTION?
             </h4>
           </div>
           <h2 className="text-4xl font-medium font-serif text-gray-700 tracking-widest leading-tight">
-            In-House Fabric Manufacturing Excellence
+            Excellence in Every Thread: Premium Manufacturing Solutions
           </h2>
           <p className="text-gray-700 text-sm font-lato leading-relaxed">
-            YARA Production carries out all the key stages of production in its
-            integrated facility in Castellón, Spain. Our company, which has
-            increased its annual production capacity to 750,000 units by
-            continuing its sustainable latest production technologies and
-            investments since the day it was founded.
+            At YARA Production, we bring passion and precision to every stage of
+            manufacturing. Our state-of-the-art integrated facility in
+            Castellón, Spain combines traditional craftsmanship with
+            cutting-edge technology to deliver exceptional quality for
+            discerning brands worldwide. Our commitment to innovation and
+            sustainable practices has enabled us to grow our capacity to 750,000
+            units annually while maintaining the highest standards of
+            excellence.
           </p>
 
           <div className="space-y-6">
@@ -111,11 +131,12 @@ const WhyChose = () => {
               </div>
               <div>
                 <h3 className="text-xl font-serif font-medium text-amber-600">
-                  Manufacturing for Worldwide Brands
+                  Trusted by Global Brands
                 </h3>
                 <p className="text-gray-700 text-sm font-lato">
-                  The collections we produce adorn the store displays of
-                  worldwide brands.
+                  We proudly manufacture collections that grace the world's most
+                  prestigious stores, building lasting partnerships through
+                  consistent quality and reliability.
                 </p>
               </div>
             </div>
@@ -126,11 +147,12 @@ const WhyChose = () => {
               </div>
               <div>
                 <h3 className="text-xl font-serif font-medium text-amber-600">
-                  Integrated Production Facility
+                  Complete Vertical Integration
                 </h3>
                 <p className="text-gray-700 text-sm font-lato">
-                  Complete control over every step of the manufacturing process
-                  ensures consistent quality.
+                  With full control over every production step, we guarantee
+                  unmatched quality consistency, rapid prototyping, and flexible
+                  customization options.
                 </p>
               </div>
             </div>
@@ -141,11 +163,12 @@ const WhyChose = () => {
               </div>
               <div>
                 <h3 className="text-xl font-serif font-medium text-amber-600">
-                  Fast Delivery Advantage
+                  Accelerated Production Timeline
                 </h3>
                 <p className="text-gray-700 text-sm font-lato">
-                  Because we produce our fabric onsite, we reduce lead times by
-                  50% compared to competitors.
+                  Our integrated manufacturing process reduces lead times by
+                  50%, getting your products to market faster without
+                  compromising on quality.
                 </p>
               </div>
             </div>
@@ -155,7 +178,7 @@ const WhyChose = () => {
         <div className="relative h-full min-h-[500px]">
           <img
             src={machine}
-            alt="Manufacturing facility"
+            alt="State-of-the-art manufacturing facility"
             className="w-full h-full object-cover rounded-xl shadow-2xl border-4 border-secondary"
           />
           <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
@@ -166,12 +189,12 @@ const WhyChose = () => {
         <div className="flex items-center gap-4 mb-6">
           <div className="h-px bg-gray-900 flex-1"></div>
           <h4 className="text-lg font-serif font-medium text-gray-500 uppercase tracking-widest whitespace-nowrap">
-            WHY CHOOSE US
+            OUR MANUFACTURING EXCELLENCE
           </h4>
           <div className="h-px bg-gray-900 flex-1"></div>
         </div>
         <h2 className="text-4xl font-serif tracking-wider font-medium text-gray-700 mb-12 text-center">
-          Immense Integrated Factory
+          The Complete Production Journey Under One Roof
         </h2>
 
         <div className="relative px-12">
@@ -228,6 +251,9 @@ const WhyChose = () => {
                     <h3 className="text-2xl font-bold text-white text-center mb-4 font-serif">
                       {card.title}
                     </h3>
+                    <p className="text-gray-200 text-center text-sm px-4">
+                      {card.description}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>

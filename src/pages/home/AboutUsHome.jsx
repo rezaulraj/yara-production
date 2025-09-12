@@ -71,20 +71,22 @@ const AboutUsHome = () => {
             About us
           </h4>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-gray-700 leading-tight">
-            Private Label Exclusive High-End Quality Garments Manufacturer
+            Exclusive High-Quality Garments & Knitwear Manufacturer
           </h2>
           <p className="text-gray-600 text-md leading-relaxed font-lato">
-            YARA Production with 24 years of textile production knowledge and
-            experience, producing high-quality garments for worldwide brands and
+            With over 24 years of proven expertise in textile manufacturing,
+            YARA Production specializes in delivering premium-quality garments
+            for both renowned international fashion houses and innovative
             start-up brands.
             <br />
             <br />
-            Perfectly filling the gap in the production of high quality and
-            exclusive boutique garments in the sector, Yara Production is the
-            leader in Castellón, Spain in the production of niche and high
-            quality knitwear products by producing in-house cotton, silk, wool,
-            linen, cashmere, tencel, viscose and nylon knitted fabrics, starting
-            from selecting the yarn for the garment.
+            As a trusted leader in Castellón, Spain, YARA Production perfectly
+            fills the gap in exclusive, boutique-level garment production. The
+            company stands out for its mastery in high-end knitwear, producing
+            fabrics entirely in-house — including cotton, silk, wool, linen,
+            cashmere, tencel, viscose, and nylon. This end-to-end approach
+            guarantees exceptional quality, precision, and craftsmanship at
+            every stage of production.
           </p>
 
           <button
@@ -111,7 +113,7 @@ const AboutUsHome = () => {
                 ></path>
               </svg>
             </span>
-            <span className="relative z-10">Learn More</span>
+            <span className="relative z-10">More Info</span>
           </button>
         </div>
 

@@ -69,7 +69,7 @@ const FabricProduct = () => {
       className="max-w-screen-xl mx-auto my-20 px-6"
     >
       <Helmet>
-        <title>Fabric Manufacturing | YARA Production</title>
+        <title>Fabric Production</title>
         <meta
           name="description"
           content="YARA Production offers in-house fabric manufacturing, producing high-quality fabrics with reduced lead times, cost efficiency, and unique collections."
@@ -83,7 +83,7 @@ const FabricProduct = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="In-House Fabric Manufacturing | YARA Production"
+          content="In-House Fabric Production"
         />
         <meta
           property="og:description"
@@ -140,7 +140,7 @@ const FabricProduct = () => {
             Dedication to Excellence
           </h4>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-gray-700 uppercase leading-tight">
-            In-House Fabric Manufacturing
+            In-House Fabric Production
           </h2>
 
           <p className="text-gray-600 text-md leading-relaxed font-lato">
@@ -154,7 +154,7 @@ const FabricProduct = () => {
 
           <div className="mt-8">
             <h3 className="text-2xl font-serif font-normal text-gray-700 mb-6">
-              Benefits of In-House Manufacturing
+              Benefits of In-House Production
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (

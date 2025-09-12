@@ -23,11 +23,11 @@ const OurStrength = () => {
   const productionFeatures = [
     {
       icon: <FiCpu className="text-3xl text-amber-600" />,
-      text: "Eight state-of-the-art fabric production machines",
+      text: "Eight advanced fabric production machines",
     },
     {
       icon: <FiPackage className="text-3xl text-amber-600" />,
-      text: "Five collar machines",
+      text: "Five specialized collar machines",
     },
   ];
 
@@ -67,16 +67,14 @@ const OurStrength = () => {
       <div className="max-w-screen-xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h4 className="text-primary font-serif text-lg tracking-widest">
-              OUR STRENGTH
+            <h4 className="text-primary font-serif text-lg tracking-widest uppercase">
+              Our Expertise
             </h4>
             <h2 className="text-4xl font-serif font-medium text-gray-800 leading-tight">
-              Transforming Yarns into Exquisite Fabrics
+              From Superior Yarns to Premium Fabrics
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Our fabric production facility has evolved significantly, growing
-              from humble beginnings with two machines to a state-of-the-art
-              setup featuring:
+              Our fabric production facility has grown remarkably, evolving from humble beginnings with just two machines to a state-of-the-art setup featuring:
             </p>
 
             <div className="space-y-4">

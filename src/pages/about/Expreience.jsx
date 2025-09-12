@@ -13,7 +13,7 @@ const Expreience = () => {
             Yara Production
           </h2>
           <p className="text-gray-600 text-md leading-relaxed font-lato">
-            Yara Production was founded in 2017 by Mr. Goksel TURHAL, leveraging
+            Yara Production was founded in 2015 by Mr. Alejandro, leveraging
             Yara production expertise gained over 24 years. Our company excels
             in producing exclusive, high-quality knitted products as a leading
             niche clothing manufacturer. We prioritize strict quality control

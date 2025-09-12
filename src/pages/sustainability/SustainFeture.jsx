@@ -111,11 +111,11 @@ const SustainFeature = () => {
           <div className="flex items-center space-x-3">
             <FaLeaf className="text-green-500 text-2xl" />
             <h4 className="text-lg font-medium text-gray-500 font-merriweather uppercase tracking-[5px]">
-              Responsible Manufacturing
+              Ethical Manufacturing
             </h4>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-gray-700 leading-tight">
-            For a Brighter Future
+            Building a Sustainable Tomorrow
           </h2>
 
           <h3 className="text-2xl font-serif font-normal text-gray-700 mt-6 flex items-center">

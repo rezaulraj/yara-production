@@ -73,19 +73,19 @@ const ContactForm = () => {
   return (
     <section id="get-in-touch" className="bg-gray-50 py-16 relative">
       <Helmet>
-        <title>Contact Us | YARA Production</title>
+        <title>Contact Us</title>
         <meta
           name="description"
           content="Get in touch with YARA Production for inquiries, partnerships, or support. Fill out our contact form or reach us via email or visit our location in Spain."
         />
         <meta
           name="keywords"
-          content="YARA Production contact, textile inquiries, fabric inquiries, business contact, Spain office"
+          content="YARA Production contact, yara production, textile inquiries, fabric inquiries, business contact, Spain office"
         />
         <meta name="author" content="YARA Production" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Us | YARA Production" />
+        <meta property="og:title" content="Contact Us" />
         <meta
           property="og:description"
           content="Reach out to YARA Production via our contact form, email, or visit our office in Morella, Spain. We're here to answer all your inquiries."
